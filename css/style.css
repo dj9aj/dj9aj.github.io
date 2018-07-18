@@ -117,7 +117,7 @@ body {
   grid-template-columns: "1fr 1fr";
   grid-template-areas: "pic text";
   margin: 0 auto;
-  width: 75%; }
+  width: 80%; }
   .about__pic {
     grid-area: pic; }
   .about__text {
