@@ -1,0 +1,39 @@
+.about {
+
+    display: grid;
+    grid-template-columns: "1fr 1fr";
+    grid-template-areas: "pic text";
+    margin: 0 auto;
+    // padding: 5rem;
+    width: 75%;
+    // box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+    // background-color: rgba($color-grey-light-1, 0.7);
+
+    &__pic {
+        grid-area: pic;
+    }
+
+    &__text {
+        grid-area: text;
+    }
+
+    
+    
+
+}
+
+
+
+.about-img {
+    max-width: 90%;
+    height: 90%;
+    // border: 2px solid $color-primary-dark-2;
+    // border-radius: 40%;
+}
+
+.paragraph {
+    margin-top: 2rem;
+    color: $color-grey-light-5;
+    font-size: 2rem;
+    
+}

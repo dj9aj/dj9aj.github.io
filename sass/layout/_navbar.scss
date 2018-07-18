@@ -1,0 +1,52 @@
+.navbar {
+    display: flex;
+    position: absolute;
+    height: 7rem;
+    z-index: 100;
+    margin: 2rem;
+    animation: moveInTop .5s ease-out .8s;
+    animation-fill-mode: backwards;
+    
+    &__list {
+        list-style: none;
+        color: $color-primary-light-new;
+        font-size: 1.8rem;
+    }
+
+    &__item {
+        display: inline;
+        position: relative;
+
+        &:not(:last-child) {
+            margin-right: .5rem;
+        }
+    }
+
+    &__item::before {
+        content: "";
+        position: absolute;
+        top: 120%;
+        left: 23%;
+        height: 1px;
+        width: 52%;
+        background-color: $color-primary-new;
+        transform: scaleX(0);
+        transition: transform .2s,
+                    height .4s .2s; 
+    }
+
+    &__item:hover::before {
+        transform: scaleX(1);
+    }
+
+    &__link:link,
+    &__link:visited {
+        color: $color-primary-light-new;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: inline;
+        padding: 1.5rem 3rem;
+        // border-bottom: 1px solid $color-primary-new;
+        margin: 1rem;
+    }
+}
