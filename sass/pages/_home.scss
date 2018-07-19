@@ -10,16 +10,54 @@
 }
 
 .section-about {
-    background-color: white;
+    background-color: $color-white;
     height: 100vh;
     transform: translateY(-5rem);
     padding: 15rem 0;
+    padding-bottom: 20rem;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
    
 }
 
+.section-skills {
+    height: 110vh;
+    padding: 20rem 0;
+    transform: translateY(-20rem);
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-dark-2, 0.6),
+        rgba($color-primary-dark-2, 0.9)),
+        url(../img/photo-1499750310107-5fef28a66643.jpeg);
+    background-size: cover;
+    background-position: left;
+    clip-path: polygon(0 7%, 50% 12%, 100% 7%, 100% 105vh, 50vw 100%, 0 105vh);
+    // clip-path: polygon(0 0, 50vw 5vh, 100% 0, 100% 100%, 0 100%);
+    // clip-path: polygon(0 0, 100% 0, 100% 95vh, 50vw 100%, 0 95vh);
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: min-content;
+    grid-gap: 10rem;
+    width: 80%;
+    margin: 0 auto;
+
+    &:nth-child(odd) {
+        height: 20vh;   
+    }
+}
+   
+
+
 
 .section-work {
-    background-color: $color-grey-dark-3;
+    background-color: white;
+    height: 80vh;
+    // transform: translateY(-5rem);
+    padding: 15rem 0;
    
 }
 
