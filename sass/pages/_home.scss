@@ -15,6 +15,7 @@
     transform: translateY(-5rem);
     padding: 15rem 0;
     padding-bottom: 20rem;
+    
     // display: flex;
     // flex-direction: column;
     // align-items: center;
@@ -25,6 +26,7 @@
     height: 110vh;
     padding: 20rem 0;
     z-index: 10;
+    
     transform: translateY(-17rem);
     background-image: linear-gradient(
         to right bottom,
@@ -56,14 +58,26 @@
 
 .section-work {
     background-color: $color-grey-light-2;
-    height: 600vh;
+    height: 475vh;
     transform: translateY(-22rem);
     padding: 15rem 0;
-   
+    // overflow: hidden;
 }
 
 .section-contact {
-    background-color: $color-grey-dark-4;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-dark-2, 0.8),
+        rgba($color-grey-dark-3, 0.9)),
+        url(../img/phil-desforges-675158-unsplash.jpg);
+        height: 60rem;
+        transform: translateY(-33rem);
+        background-size: cover;
+    background-position: left;
+    z-index: 10;
+    padding: 14rem 0;
+    clip-path: polygon(0 7%, 50% 12%, 100% 7%, 100% 105vh, 50vw 100%, 0 105vh);
+    
 }
 
 

@@ -71,7 +71,7 @@
         height: 100%;
         margin-top: 5rem;
         grid-row: 1 / 4;
-        grid-column: 1 / 8;
+        grid-column: 1 / -1;
         box-shadow: 0 2rem 5rem rgba($color-black, 0.1);
         
 
@@ -89,7 +89,7 @@
         height: 100%;
         margin-top: 5rem;
         grid-row: 2 / 5;
-        grid-column: 2 / -1;
+        grid-column: 1 / -1;
         z-index: 10;
         transform: translateX(5rem);
         box-shadow: 0 2rem 5rem rgba($color-black, 0.2);
@@ -110,6 +110,7 @@
         grid-column: 2 / 2;
         // background-color: $color-grey-light-2;
         padding: 5rem 6vw;
+        
         
     }
 
