@@ -44,14 +44,14 @@
         border-bottom: 1px solid $color-primary-new;
         // Can use pixels if amounts are very small
         padding: 3px;
-        transition: all .2s;
+        transition: all .2s ease-in;
     }
 
     &:hover {
         background-color: $color-primary-new;
         color: $color-primary-light-new;
         box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
-        transform: translateY(-2px);
+        // transform: translateY(-1px);
     }
 
     &:active {

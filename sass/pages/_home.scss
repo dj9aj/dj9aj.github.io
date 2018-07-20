@@ -7,12 +7,14 @@
 
     display: flex;
     flex-direction: column;
+    
+   
 }
 
 .section-about {
     background-color: $color-grey-light-2;
     height: 100vh;
-    transform: translateY(-5rem);
+    margin-top: -10rem;
     padding: 15rem 0;
     padding-bottom: 20rem;
     
@@ -27,7 +29,7 @@
     padding: 20rem 0;
     z-index: 10;
     
-    transform: translateY(-17rem);
+    margin-top: -17rem;
     background-image: linear-gradient(
         to right bottom,
         rgba($color-primary-dark-2, 0.8),
@@ -59,7 +61,7 @@
 .section-work {
     background-color: $color-grey-light-2;
     height: 475vh;
-    transform: translateY(-22rem);
+    margin-top: -5rem;
     padding: 15rem 0;
     // overflow: hidden;
 }
@@ -69,9 +71,9 @@
         to right bottom,
         rgba($color-primary-dark-2, 0.8),
         rgba($color-grey-dark-3, 0.9)),
-        url(../img/phil-desforges-675158-unsplash.jpg);
-        height: 60rem;
-        transform: translateY(-33rem);
+        url(../img/phil-desforges-675158-unsplash-copy.jpg);
+        height: 50rem;
+        margin-top: -8rem;
         background-size: cover;
     background-position: left;
     z-index: 10;

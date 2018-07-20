@@ -18,7 +18,7 @@
 
     &__item {
         display: inline;
-        transition: transform .2s;
+        
         
         &:not(:last-child) {
             margin-right: 5rem;
@@ -30,6 +30,7 @@
         color: $color-primary-light-new;
         text-decoration: none;
         font-size: 2.6rem;
+        transition: all .1s ease-in;
     }
 
     &__link:hover {
