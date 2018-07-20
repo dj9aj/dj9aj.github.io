@@ -19,9 +19,6 @@
         /* Automatically apply the styles of the 0% before the animation starts */
         animation-fill-mode: backwards;
 
-        & a:not(:last-child) {
-            margin-right: 5rem;
-        }
     }
     
 

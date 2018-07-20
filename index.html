@@ -37,15 +37,15 @@
                     <h1 class="heading-primary">Hello, I'm <span id="jack">Jack Doyle</span></h1>
                     <p class="heading-text">I'm a Web Developer. I've created a portfolio to showcase the skills that I've learnt so far.</p>
                     <div class="header-content__links">
-                        <a href="#" class="btn btn--blue btn-animated">About me</a>    
-                        <a href="#" class="btn btn--blue btn-animated">My work</a>    
+                        <a href="#" class="btn btn--blue btn-animated u-margin-right-medium">About me</a>    
+                        <a href="#" class="btn btn--blue btn-animated u-margin-right-medium">My work</a>    
                     </div> 
                 </div>
             </header>
     
             <section class="section-about">
                 <div class="u-center-text u-margin-bottom-large">
-                    <h2 class="heading-secondary--dark">
+                    <h2 class="heading-secondary heading-secondary--dark">
                         About
                     </h2>
                     <div class="heading-hr"></div>
@@ -57,25 +57,15 @@
                     </div>
                     <div class="about__vr"></div>
                     <div class="about__text">
-                        <p class="paragraph">Attracted by new technologies and an ever-expanding industry,  I recently took the plunge to pursue a career in what I love to do. I have five years experience working in the audio post production industry, which I believe has equipped me with the core skills required to thrive in a team environment.  I have taught myself the fundamentals of HTML, CSS and JavaScript using various online resources. I have built some web applications to showcase my skills.   
-                                
-                                 </p>  
+                        <p class="paragraph">Attracted by new technologies and an ever-expanding industry,  I recently took the plunge to pursue a career in what I love to do. I have five years experience working in the audio post production industry, which I believe has equipped me with the core skills required to thrive in a team environment.  I have taught myself the fundamentals of HTML, CSS and JavaScript using various online resources. I have built some web applications to showcase my skills.</p>  
                         <a href="#" class="btn-text">My skills &rarr;</a>         
                     </div>
-                    
                 </div>
             </section>
 
             <section class="section-skills">
-                <!-- <div class="bg-video">
-                    <video class="bg-video__content" autoplay muted>
-                        <source src="img/Behind-the-screen.mp4" type="video/mp4">
-                        <source src="img/Behind-the-screen.webm" type="video/webm">
-                        Your browser is not supported!    
-                    </video>
-                </div> -->
                 <div class="u-center-text u-margin-bottom-large">
-                    <h2 class="heading-secondary--light">
+                    <h2 class="heading-secondary heading-secondary--light">
                         My Skills
                     </h2>
                 <div class="heading-hr"></div>
@@ -117,10 +107,80 @@
     
             <section class="section-work">
                 <div class="u-center-text u-margin-bottom-large">
-                    <h2 class="heading-secondary--dark">
+                    <h2 class="heading-secondary heading-secondary--dark">
                         My Work
                     </h2>
                     <div class="heading-hr"></div>
+                </div>
+
+                <div class="project">
+                    <div class="project__pictures">
+                        <img src="img/forkify-1-new.png" alt="Forkify Screen Shot 1" class="project__img-portrait--1">
+                        <img src="img/forkify-2-new.png" alt="Forkify Screen Shot 2" class="project__img-portrait--2">  
+                    </div>
+                    <div class="project__content">
+                        <h3 class="heading-tertiary heading-tertiary--dark u-center-text">Forkify</h3>
+                        <div class="heading-hr--small u-margin-bottom-medium"></div>
+                        <p class="project__text u-margin-bottom-small">Forkify is a vanilla JavaScript application that interacts with the food2fork API to fetch and display recipe food data. This app uses modern JavaScript tools, such as Webpack to bundle the modules, and Babel to convert ES6, ES7 and ES8 back to ES5. The user can search for a specific recipe, and add ingredients to a shopping list or save to a favourites list via local storage. I created a simple Express server in order to host the app via Heroku. Please refer to my GitHub repo for more information about my additional and re-factored features.</p>
+                        <a href="#" class="btn-text u-margin-right-medium u-margin-top-small">View App &rarr;</a> 
+                        <a href="#" class="btn-text u-margin-top-small">View Code &rarr;</a> 
+                    </div>       
+                </div>
+
+                <div class="project">
+                    <div class="project__pictures">
+                        <img src="img/my_budget_pal-landscape-1.png" alt="My Budget Pal Screen Shot 1" class="project__img-landscape--1">
+                        <img src="img/my_budget_pal-landscape-2.png" alt="My Budget Pal Screen Shot 2" class="project__img-landscape--2">  
+                    </div>
+                    <div class="project__content">
+                        <h3 class="heading-tertiary heading-tertiary--dark u-center-text">My Budget Pal</h3>
+                        <div class="heading-hr--small u-margin-bottom-medium"></div>
+                        <p class="project__text u-margin-bottom-small">I created a full-stack application, which allows a user to create an account and log income/expense receipts. The user can categorise receipts and monitor the current budget available. The Express app includes a MongoDB database and user authentication via PassportJS. Receipts can also be edited and deleted by the user. The mobile responsive app is styled with CSS Flexbox.</p>
+                        <a href="#" class="btn-text u-margin-right-medium u-margin-top-small">View App &rarr;</a> 
+                        <a href="#" class="btn-text u-margin-top-small">View Code &rarr;</a> 
+                    </div>       
+                </div>
+
+                <div class="project">
+                    <div class="project__pictures">
+                        <img src="img/natours-landscape-2.png" alt="My Budget Pal Screen Shot 1" class="project__img-landscape--1">
+                        <img src="img/natours-landscape-1.png" alt="My Budget Pal Screen Shot 2" class="project__img-landscape--2">  
+                    </div>
+                    <div class="project__content">
+                        <h3 class="heading-tertiary heading-tertiary--dark u-center-text">Natours</h3>
+                        <div class="heading-hr--small u-margin-bottom-medium"></div>
+                        <p class="project__text u-margin-bottom-small">Natours is a landing page for a fictional company that offers tours for the outdoors. This app was built using pure CSS, including many modern and up to date features. The layout is fully responsive for multiple screen widths. This is my first project using Sass, which is a great extension of CSS that adds power and elegence to the language. The classes are named using the BEM system. I decided to refactor the original code by adding additional variables, mixins etc. This has made the code more maintainable not only for this project, but also re-usable for future Sass projects.</p>
+                        <a href="#" class="btn-text u-margin-right-medium u-margin-top-small">View App &rarr;</a> 
+                        <a href="#" class="btn-text u-margin-top-small">View Code &rarr;</a> 
+                    </div>       
+                </div>
+
+                <div class="project">
+                    <div class="project__pictures">
+                        <img src="img/yelpcamp-landscape-1.png" alt="My Budget Pal Screen Shot 1" class="project__img-landscape--1">
+                        <img src="img/yelpcamp-landscape-2.png" alt="My Budget Pal Screen Shot 2" class="project__img-landscape--2">  
+                    </div>
+                    <div class="project__content">
+                        <h3 class="heading-tertiary heading-tertiary--dark u-center-text">YelpCamp</h3>
+                        <div class="heading-hr--small u-margin-bottom-medium"></div>
+                        <p class="project__text u-margin-bottom-small">YelpCamp is a RESTful full-stack application, built with ExpressJS, PassportJS and MongoDB. The app uses EJS templates to interact between the backend and frontend. Users can create an account and post, edit and delete campgrounds. User can also review campgrounds and leave comments. I have incorporated the Google Maps API to display a campground's location. The app is styled with Bootstrap.</p>
+                        <a href="#" class="btn-text u-margin-right-medium u-margin-top-small">View App &rarr;</a> 
+                        <a href="#" class="btn-text u-margin-top-small">View Code &rarr;</a> 
+                    </div>       
+                </div>
+
+                <div class="project">
+                    <div class="project__pictures">
+                        <img src="img/portfolio-landscape-2.png" alt="My Budget Pal Screen Shot 1" class="project__img-landscape--1">
+                        <img src="img/portfolio-landscape-1.png" alt="My Budget Pal Screen Shot 2" class="project__img-landscape--2">  
+                    </div>
+                    <div class="project__content">
+                        <h3 class="heading-tertiary heading-tertiary--dark u-center-text">My Portfolio Site</h3>
+                        <div class="heading-hr--small u-margin-bottom-medium"></div>
+                        <p class="project__text u-margin-bottom-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla imperdiet augue ut sodales faucibus. Phasellus porta faucibus mi, at malesuada orci fringilla et. Suspendisse ultrices purus vel malesuada gravida. Suspendisse vitae mi sit amet lorem sagittis varius eget et turpis. Integer ornare malesuada est quis aliquet. Proin hendrerit ornare suscipit. Phasellus turpis ex, elementum vitae turpis in, lobortis consequat sapien. Sed in urna libero. In hac habitasse platea dictumst. </p>
+                        <a href="#" class="btn-text u-margin-right-medium u-margin-top-small">View App &rarr;</a> 
+                        <a href="#" class="btn-text u-margin-top-small">View Code &rarr;</a> 
+                    </div>       
                 </div>
             </section>
     
