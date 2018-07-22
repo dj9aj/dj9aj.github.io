@@ -22,7 +22,8 @@
         
         display: grid;
         grid-template-rows: repeat(6, 1fr);
-        grid-template-columns: repeat(8, 1fr);
+        grid-template-columns: repeat(8, minmax(min, min-content, max-content));
+        // grid-template-columns: repeat(8, 1fr);
         align-items: center;
         padding-top: 5rem;
         // overflow: hidden;
@@ -33,6 +34,7 @@
     &__img-portrait--1 {
         max-width: 100%;
         max-height: 100%;
+        
         grid-row: 1 / 6;
         grid-column: 2 / 7;
         box-shadow: 0 2rem 5rem rgba($color-black, 0.1);
@@ -119,4 +121,23 @@
         color: $color-grey-light-5;
     }
 
+}
+
+.work-heading,
+.work-hr {
+    opacity: 0;
+    // animation: moveInBottom;
+    
+}
+
+.animateFromLeft {
+    // animation: moveInBottom 1s ease-out;
+    animation: moveInFarLeft 0.5s ease-out;
+    // animation-fill-mode: backwards;
+    opacity: 1;
+}
+
+.animateFromRight {
+    animation: moveInFarRight 0.5s ease-out;
+    opacity: 1;
 }

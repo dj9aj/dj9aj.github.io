@@ -38,3 +38,22 @@
         transform: scale(1.3) translateY(-.1rem);
     }
 }
+
+.contact-heading,
+.contact-hr {
+    opacity: 0;
+    // animation: moveInBottom;
+    
+}
+
+.animateFromLeft {
+    // animation: moveInBottom 1s ease-out;
+    animation: moveInFarLeft 0.5s ease-out;
+    // animation-fill-mode: backwards;
+    opacity: 1;
+}
+
+.animateFromRight {
+    animation: moveInFarRight 0.5s ease-out;
+    opacity: 1;
+}

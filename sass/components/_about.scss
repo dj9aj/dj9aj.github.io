@@ -9,7 +9,7 @@
     width: 50%;
     margin: 0 auto;
 
-    &__shape {
+    &__picture {
         grid-area: pic;
         width: 35rem;
         height: 30rem;
@@ -48,4 +48,30 @@
         background-color: $color-primary-dark-2;
     }
     
+}
+
+.about-heading,
+.about-hr {
+    opacity: 0;
+    // animation: moveInBottom;
+    
+}
+
+
+
+.animateFromLeft {
+    // animation: moveInBottom 1s ease-out;
+    animation: moveInFarLeft 0.5s ease-out;
+    // animation-fill-mode: backwards;
+    opacity: 1;
+}
+
+.animateFromRight {
+    animation: moveInFarRight 0.5s ease-out;
+    opacity: 1;
+}
+
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
