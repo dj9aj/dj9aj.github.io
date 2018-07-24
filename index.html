@@ -6,9 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
         <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
-        <!-- <link rel="stylesheet" href="css/font-awesome.css"> -->
-        
+        <link rel="stylesheet" href="css/font-awesome/all.min.css">        
         <link rel="stylesheet" href="css/style.css">
 
         <title>Jack Doyle | Web Developer</title>
@@ -19,16 +17,16 @@
             <input type="checkbox" class="navbar__toggle" id="toggle">
             <ul class="navbar__list">
                 <li class="navbar__item">
-                    <a href="#" class="navbar__link">About</a>
+                    <a href="#section-about" class="navbar__link">About</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="#" class="navbar__link">Skills</a>
+                    <a href="#section-skills" class="navbar__link">Skills</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="#" class="navbar__link">Work</a>
+                    <a href="#section-work" class="navbar__link">Work</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="#" class="navbar__link">Contact</a>
+                    <a href="#section-contact" class="navbar__link">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -38,12 +36,12 @@
                 <h1 class="heading-primary header__heading">Hello, I'm <span id="jack">Jack Doyle</span></h1>
                 <p class="header__text">I'm a Web Developer. I've created a portfolio to showcase the skills that I've learnt so far.</p>
                 <div class="header__links">
-                    <a href="#" class="btn btn--blue btn-animated">About me</a>    
-                    <a href="#" class="btn btn--blue btn-animated">My work</a>    
+                    <a href="#section-about" class="btn btn--blue btn-animated">About me</a>    
+                    <a href="#section-work" class="btn btn--blue btn-animated">My work</a>    
                 </div> 
         </header>
 
-        <section class="section-about">
+        <section class="section-about" id="section-about">
             <div class="u-center-text u-margin-bottom-large u-margin-top-medium">
                 <h2 class="heading-secondary heading-secondary--dark about-heading">
                     About
@@ -53,18 +51,22 @@
             
             <div class="about">
                 <div class="about__picture">
-                    <img src="img/jack-tiny.jpg" alt="Jack Headshot" class="about__img">
+                    <picture class="about__img">
+                        <source srcset="img/jack-small.jpg " media="(max-width: 37.5em)"> 
+                        <img src="img/jack.jpg" alt="Jack Headshot" class="about__img">
+                    </picture>
+                    <!-- <img src="img/jack.jpg" alt="Jack Headshot" class="about__img"> -->
                 </div>
                 <div class="about__vr"></div>
                 <div class="about__text">
                     <p class="paragraph">Attracted by new technologies and an ever-expanding industry,  I recently took the plunge to pursue a career in what I love to do. I have five years experience working in the audio post production industry, which I believe has equipped me with the core skills required to thrive in a team environment.  I have taught myself the fundamentals of HTML, CSS and JavaScript using various online resources and I am now looking for my first job in the industry. I have built some web applications to showcase my skills.</p>  
-                    <a href="#" class="btn-text u-margin-right-medium">My skills &rarr;</a>         
+                    <a href="#section-skills" class="btn-text u-margin-right-medium">My skills &rarr;</a>         
                     <a href="#" class="btn-text">Download my C.V &rarr;</a>         
                 </div>
             </div>
         </section>
     
-        <section class="section-skills">
+        <section class="section-skills" id="section-skills">
             <div class="u-center-text u-margin-bottom-large">
                 <h2 class="heading-secondary heading-secondary--light skills-heading">
                     My Skills
@@ -107,7 +109,7 @@
             </div>
         </section>
 
-        <section class="section-work">
+        <section class="section-work" id="section-work">
             <div class="u-center-text u-margin-bottom-large">
                 <h2 class="heading-secondary heading-secondary--dark work-heading">
                     My Work
@@ -124,8 +126,8 @@
                     <h3 class="heading-tertiary heading-tertiary--dark u-center-text">Forkify</h3>
                     <div class="heading-hr--small u-margin-bottom-medium"></div>
                     <p class="project__text u-margin-bottom-small">Forkify is a vanilla JavaScript application that interacts with the food2fork API to fetch and display recipe food data. This app uses modern JavaScript tools, such as Webpack to bundle the modules, and Babel to convert ES6, ES7 and ES8 back to ES5. The user can search for a specific recipe, and add ingredients to a shopping list or save to a favourites list via local storage. I created a simple Express server in order to host the app via Heroku. Please refer to my GitHub repo for more information about my additional and re-factored features.</p>
-                    <a href="#" class="btn-text u-margin-right-medium u-margin-top-small">View App &rarr;</a> 
-                    <a href="#" class="btn-text u-margin-top-small">View Code &rarr;</a> 
+                    <a href="https://shielded-fjord-62551.herokuapp.com/" class="btn-text u-margin-right-medium u-margin-top-small">View App &rarr;</a> 
+                    <a href="https://github.com/dj9aj/Forkify" class="btn-text u-margin-top-small">View Code &rarr;</a> 
                 </div>       
             </div>
 
@@ -138,8 +140,8 @@
                     <h3 class="heading-tertiary heading-tertiary--dark u-center-text">My Budget Pal</h3>
                     <div class="heading-hr--small u-margin-bottom-medium"></div>
                     <p class="project__text u-margin-bottom-small">I created a full-stack application, which allows a user to create an account and log income/expense receipts. The user can categorise receipts and monitor the current budget available. The Express app includes a MongoDB database and user authentication via PassportJS. Receipts can also be edited and deleted by the user. The mobile responsive app is styled with CSS Flexbox.</p>
-                    <a href="#" class="btn-text u-margin-right-medium u-margin-top-small">View App &rarr;</a> 
-                    <a href="#" class="btn-text u-margin-top-small">View Code &rarr;</a> 
+                    <a href="https://mysterious-lowlands-58174.herokuapp.com/" class="btn-text u-margin-right-medium u-margin-top-small">View App &rarr;</a> 
+                    <a href="https://github.com/dj9aj/My-Budget-Pal" class="btn-text u-margin-top-small">View Code &rarr;</a> 
                 </div>       
             </div>
 
@@ -152,8 +154,8 @@
                     <h3 class="heading-tertiary heading-tertiary--dark u-center-text">Natours</h3>
                     <div class="heading-hr--small u-margin-bottom-medium"></div>
                     <p class="project__text u-margin-bottom-small">Natours is a landing page for a fictional company that offers tours for the outdoors. This app was built using pure CSS, including many modern and up to date features. The layout is fully responsive for multiple screen widths. This is my first project using Sass, which is a great extension of CSS that adds power and elegence to the language. The classes are named using the BEM system. I decided to refactor the original code by adding additional variables, mixins etc. This has made the code more maintainable not only for this project, but also re-usable for future Sass projects.</p>
-                    <a href="#" class="btn-text u-margin-right-medium u-margin-top-small">View App &rarr;</a> 
-                    <a href="#" class="btn-text u-margin-top-small">View Code &rarr;</a> 
+                    <a href="https://pure-lowlands-81406.herokuapp.com/" class="btn-text u-margin-right-medium u-margin-top-small">View App &rarr;</a> 
+                    <a href="https://github.com/dj9aj/Natours-Landing-Page" class="btn-text u-margin-top-small">View Code &rarr;</a> 
                 </div>       
             </div>
 
@@ -180,13 +182,13 @@
                     <h3 class="heading-tertiary heading-tertiary--dark u-center-text">My Portfolio Site</h3>
                     <div class="heading-hr--small u-margin-bottom-medium"></div>
                     <p class="project__text u-margin-bottom-small">Yes, you guessed it! The site you’re currently on is my portfolio page, which I have created to show off what I’ve learnt so far and what I can potentially offer. Alongside the latest HTML5 syntax, I used Sass to compile my CSS. I broke different components down into separate Sass files, with the potential to re-use elements in future projects. I used a mixture of Flexbox and Grid to design the layout of the page. I wrote a JavaScript function to add and remove classes on the navigation bar depending on the scroll position of the page.</p>
-                    <a href="#" class="btn-text u-margin-right-medium u-margin-top-small">View App &rarr;</a> 
-                    <a href="#" class="btn-text u-margin-top-small">View Code &rarr;</a> 
+                    <!-- <a href="#" class="btn-text u-margin-right-medium u-margin-top-small">View App &rarr;</a>  -->
+                    <a href="https://github.com/dj9aj/My-Portfolio-Page" class="btn-text u-margin-top-small">View Code &rarr;</a> 
                 </div>       
             </div>
         </section>
 
-        <section class="section-contact">
+        <section class="section-contact" id="section-contact">
             <div class="u-center-text u-margin-bottom-medium">
                 <h2 class="heading-secondary heading-secondary--light contact-heading">
                     Get in touch

@@ -64,12 +64,14 @@ window.onscroll = function changeNav(){
     // else if ()
 }
 
+const elements = document.getElementsByClassName("navbar__link");
+const toggle = document.getElementById('toggle');
 
 
-// var aboutSection = document.querySelector('.section-about');
+Array.from(elements).forEach(el => {
+    el.addEventListener('click', e => {
+        toggle.checked = false;
+    })
+})
 
 
-// window.addEventListener('scroll', function(evt) {
-//     aboutTitle.classList.add('animateFromLeft');
-//     aboutHr.classList.add('animateFromRight');
-// });
