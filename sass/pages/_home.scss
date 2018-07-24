@@ -17,6 +17,18 @@
     margin-top: -10rem;
     padding: 15rem 0;
     padding-bottom: 20rem;
+
+    @media only screen and (max-width: $bp-largest) {
+        height: 90vh;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        height: 125vh;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        height: 140vh;
+    }
     
     // display: flex;
     // flex-direction: column;
@@ -40,6 +52,20 @@
     clip-path: polygon(0 7%, 50% 12%, 100% 7%, 100% 105vh, 50vw 100%, 0 105vh);
     // clip-path: polygon(0 0, 50vw 5vh, 100% 0, 100% 100%, 0 100%);
     // clip-path: polygon(0 0, 100% 0, 100% 95vh, 50vw 100%, 0 95vh);
+
+    @media only screen and (max-width: $bp-largest) {
+        height: 90vh;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        height: 200vh;
+        clip-path: polygon(0 0, 50% 5rem, 100% 0, 100% 98%, 50vw 100%, 0 98%);
+    }
+
+    // @media only screen and (max-width: $bp-small) {
+    //     height: 180vh;
+    //     clip-path: polygon(0 0, 50% 5rem, 100% 0, 100% 98%, 50vw 100%, 0 98%);
+    // }
 }
 
 .skills {
@@ -49,6 +75,19 @@
     grid-gap: 10rem;
     width: 80%;
     margin: 0 auto;
+
+    @media only screen and (max-width: $bp-medium) {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, min-content); 
+        width: 50%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, min-content); 
+        width: 60%;
+    }
+
 
     &:nth-child(odd) {
         height: 20vh;   
@@ -63,6 +102,24 @@
     height: 470vh;
     margin-top: -5rem;
     padding: 15rem 0;
+
+    @media only screen and (max-width: $bp-largest) {
+        height: 450vh;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+        height: 350vh;
+    }
+
+
+
+    @media only screen and (max-width: $bp-medium) {
+        height: 300vh;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        height: 350vh;
+    }
     // overflow: hidden;
 }
 

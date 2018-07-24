@@ -80,6 +80,9 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 50%; } }
 
 ::selection {
   background-color: #f7f7f7;
@@ -123,14 +126,6 @@ body {
     color: #616161; }
   .heading-tertiary--light {
     color: #E9E4DE; }
-
-.heading-text {
-  color: #E9E4DE;
-  backface-visibility: hidden;
-  font-size: 2rem;
-  font-family: 'Raleway', sans-serif;
-  animation: moveInBottom .5s ease-out .8s;
-  animation-fill-mode: backwards; }
 
 .heading-hr {
   width: 70px;
@@ -213,30 +208,62 @@ body {
   justify-content: center;
   width: 50%;
   margin: 0 auto; }
+  @media only screen and (max-width: 50em) {
+    .about {
+      width: 75%;
+      grid-row-gap: 7vh;
+      grid-template-rows: min-content min-content min-content;
+      grid-template-columns: 1fr;
+      grid-template-areas: "pic" "text" "vr"; } }
   .about__picture {
     grid-area: pic;
-    width: 35rem;
+    width: 34rem;
     height: 30rem;
     filter: contrast(80%);
     box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1);
     overflow: hidden; }
+    @media only screen and (max-width: 50em) {
+      .about__picture {
+        grid-row: 1 / 2;
+        width: 40rem;
+        height: 35vh;
+        margin: 0 auto; } }
   .about__text {
     width: 35rem;
     grid-area: text;
     color: #616161;
     font-size: 1.5rem; }
+    @media only screen and (max-width: 50em) {
+      .about__text {
+        grid-row: 2 / -1;
+        width: 100%; } }
     .about__text p {
       margin-bottom: 1rem; }
+      @media only screen and (max-width: 50em) {
+        .about__text p {
+          margin-bottom: 3vh; } }
   .about__img {
     width: 100%;
-    height: 100%;
+    max-height: 100%;
     border-radius: 2px; }
+    @media only screen and (max-width: 50em) {
+      .about__img {
+        width: 100%;
+        height: 100%; } }
   .about__vr {
     height: 30rem;
     grid-area: hr;
     margin: 0 2rem;
     width: 3px;
     background-color: #445373; }
+    @media only screen and (max-width: 50em) {
+      .about__vr {
+        grid-area: vr;
+        visibility: hidden;
+        width: 0;
+        height: 0;
+        opacity: 0;
+        margin: 0; } }
 
 .about-heading,
 .about-hr {
@@ -359,6 +386,25 @@ body {
   padding: 0 5rem;
   transition: all .2s;
   outline-offset: 2rem; }
+  @media only screen and (max-width: 62.5em) {
+    .project {
+      grid-template-columns: .8fr 1.2fr;
+      padding-top: 2vh;
+      padding: 0 1rem;
+      grid-column-gap: 2rem;
+      height: 50vh; } }
+  @media only screen and (max-width: 50em) {
+    .project {
+      grid-template-columns: min-content;
+      grid-template-rows: min-content;
+      height: min-content;
+      padding-top: 2vh;
+      padding: 0 1rem;
+      grid-column-gap: 2rem; } }
+  @media only screen and (max-width: 25em) {
+    .project {
+      height: min-content;
+      align-items: center; } }
   .project:not(:last-child) {
     margin-bottom: 10rem; }
   .project__pictures {
@@ -369,12 +415,21 @@ body {
     align-items: center;
     padding-top: 5rem;
     z-index: 100; }
+    @media only screen and (max-width: 62.5em) {
+      .project__pictures {
+        padding-top: 0; } }
+    @media only screen and (max-width: 50em) {
+      .project__pictures {
+        visibility: hidden; } }
   .project__img-portrait--1 {
     max-width: 100%;
     max-height: 100%;
     grid-row: 1 / 6;
     grid-column: 2 / 7;
     box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1); }
+    @media only screen and (max-width: 62.5em) {
+      .project__img-portrait--1 {
+        visibility: hidden; } }
   .project__img-portrait--2 {
     max-width: 100%;
     max-height: 100%;
@@ -383,12 +438,21 @@ body {
     z-index: 10;
     transform: translateX(8rem);
     box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2); }
+    @media only screen and (max-width: 62.5em) {
+      .project__img-portrait--2 {
+        transform: translateX(0);
+        grid-row: 2 / 6;
+        grid-column: 2 / 7;
+        align-self: center; } }
   .project__img-landscape--1 {
     max-width: 100%;
     max-height: 100%;
     grid-row: 1 / 5;
     grid-column: 1 / -1;
     box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1); }
+    @media only screen and (max-width: 62.5em) {
+      .project__img-landscape--1 {
+        visibility: hidden; } }
   .project__img-landscape--2 {
     max-width: 100%;
     max-height: 90%;
@@ -398,6 +462,12 @@ body {
     z-index: 10;
     transform: translateX(5rem);
     box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2); }
+    @media only screen and (max-width: 62.5em) {
+      .project__img-landscape--2 {
+        grid-row: 1 / 7;
+        grid-column: 1 / 4;
+        margin-top: 0;
+        height: 50%; } }
   .project__content {
     grid-column: 2 / 2;
     padding: 5rem 6vw; }
@@ -466,17 +536,50 @@ body {
   background-color: #aaa; }
 
 .header {
-  height: 100vh;
+  height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(68, 83, 115, 0.7), rgba(51, 51, 51, 0.9)), url(../img/rawpixel-678088-unsplash-copy.jpg);
   background-size: cover;
   background-position: left;
   z-index: 10;
   filter: contrast(80%);
   display: grid;
-  grid-template-columns: .8fr 1.2fr;
-  grid-template-areas: "empty content";
+  grid-template-rows: 1fr 1fr minmax(1fr, min-content);
+  grid-template-columns: 45rem;
+  grid-row-gap: 5rem;
+  justify-content: end;
+  padding: 20rem 15vw;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100vh, 50vw 100%, 0 100vh);
-  clip-path: polygon(0 0, 100% 0, 100% 95vh, 50vw 100%, 0 95vh); }
+  clip-path: polygon(0 0, 100% 0, 100% 90vh, 50vw 100%, 0 90vh); }
+  @media only screen and (max-width: 62.5em) {
+    .header {
+      justify-content: center;
+      align-items: center;
+      grid-row-gap: 1rem;
+      padding: 20rem 0;
+      grid-template-rows: 15rem 15rem 10rem;
+      text-align: center;
+      margin: 0 auto; } }
+  .header__text {
+    color: #E9E4DE;
+    backface-visibility: hidden;
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    animation: moveInBottom .5s ease-out .8s;
+    animation-fill-mode: backwards; }
+    @media only screen and (max-width: 62.5em) {
+      .header__text {
+        margin: 0 auto;
+        text-align: center; } }
+  .header__links {
+    /* Animation name, animation duration, animation-timing-function, animation delay */
+    animation: moveInBottom .5s ease-out .8s;
+    /* Automatically apply the styles of the 0% before the animation starts */
+    animation-fill-mode: backwards; }
+    .header__links > a:not(:last-child) {
+      margin-right: 3vw; }
+    @media only screen and (max-width: 62.5em) {
+      .header__links {
+        margin: 0 auto; } }
 
 .navbar {
   display: flex;
@@ -543,6 +646,15 @@ body {
   margin-top: -10rem;
   padding: 15rem 0;
   padding-bottom: 20rem; }
+  @media only screen and (max-width: 75em) {
+    .section-about {
+      height: 90vh; } }
+  @media only screen and (max-width: 50em) {
+    .section-about {
+      height: 125vh; } }
+  @media only screen and (max-width: 37.5em) {
+    .section-about {
+      height: 140vh; } }
 
 .section-skills {
   height: 110vh;
@@ -553,6 +665,13 @@ body {
   background-size: cover;
   background-position: left;
   clip-path: polygon(0 7%, 50% 12%, 100% 7%, 100% 105vh, 50vw 100%, 0 105vh); }
+  @media only screen and (max-width: 75em) {
+    .section-skills {
+      height: 90vh; } }
+  @media only screen and (max-width: 50em) {
+    .section-skills {
+      height: 200vh;
+      clip-path: polygon(0 0, 50% 5rem, 100% 0, 100% 98%, 50vw 100%, 0 98%); } }
 
 .skills {
   display: grid;
@@ -561,6 +680,16 @@ body {
   grid-gap: 10rem;
   width: 80%;
   margin: 0 auto; }
+  @media only screen and (max-width: 50em) {
+    .skills {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, min-content);
+      width: 50%; } }
+  @media only screen and (max-width: 37.5em) {
+    .skills {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, min-content);
+      width: 60%; } }
   .skills:nth-child(odd) {
     height: 20vh; }
 
@@ -569,6 +698,18 @@ body {
   height: 470vh;
   margin-top: -5rem;
   padding: 15rem 0; }
+  @media only screen and (max-width: 75em) {
+    .section-work {
+      height: 450vh; } }
+  @media only screen and (max-width: 62.5em) {
+    .section-work {
+      height: 350vh; } }
+  @media only screen and (max-width: 50em) {
+    .section-work {
+      height: 300vh; } }
+  @media only screen and (max-width: 37.5em) {
+    .section-work {
+      height: 350vh; } }
 
 .section-contact {
   background-image: linear-gradient(to right bottom, rgba(68, 83, 115, 0.8), rgba(51, 51, 51, 0.9)), url(../img/phil-desforges-675158-unsplash-copy.jpg);
