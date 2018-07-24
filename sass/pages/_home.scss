@@ -29,6 +29,16 @@
     @media only screen and (max-width: $bp-small) {
         height: 140vh;
     }
+
+    @media only screen and (max-width: $bp-smaller) {
+        height: 150vh;
+        
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+        height: 160vh;
+    }
+
     
     // display: flex;
     // flex-direction: column;
@@ -59,13 +69,30 @@
 
     @media only screen and (max-width: $bp-medium) {
         height: 200vh;
-        clip-path: polygon(0 0, 50% 5rem, 100% 0, 100% 98%, 50vw 100%, 0 98%);
+        clip-path: polygon(0 0, 50% 2%, 100% 0, 100% 98%, 50vw 100%, 0 98%);
+        margin-top: -12rem;
+        padding: 15rem 0;
     }
 
-    // @media only screen and (max-width: $bp-small) {
-    //     height: 180vh;
-    //     clip-path: polygon(0 0, 50% 5rem, 100% 0, 100% 98%, 50vw 100%, 0 98%);
-    // }
+    @media only screen and (max-width: $bp-small) {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    @media only screen and (max-width: $bp-smaller) {
+        height: 200vh;
+        padding-top: 10rem;
+        background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-dark-2, 0.9),
+        rgba($color-grey-dark-3, 0.9));
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+        
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        // padding: 10rem 0;
+        height: 220vh;
+    }
 }
 
 .skills {
@@ -118,7 +145,20 @@
     }
 
     @media only screen and (max-width: $bp-small) {
-        height: 350vh;
+        height: 360vh;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+   
+
+    @media only screen and (max-width: $bp-smaller) {
+        height: 440vh;
+        margin-top: 0;
+        padding: 10rem 0;
+    }
+    
+    @media only screen and (max-width: $bp-smallest) {
+        height: 460vh;
     }
     // overflow: hidden;
 }
@@ -136,6 +176,17 @@
     z-index: 10;
     padding: 14rem 0;
     clip-path: polygon(0 7%, 50% 12%, 100% 7%, 100% 105vh, 50vw 100%, 0 105vh);
+
+    @media only screen and (max-width: $bp-small) {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        height: 55rem;
+        padding: 10rem 0;
+    }
+
+    @media only screen and (max-width: $bp-smaller) {
+        height: 60rem;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
     
 }
 

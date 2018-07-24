@@ -83,6 +83,9 @@ html {
   @media only screen and (max-width: 75em) {
     html {
       font-size: 50%; } }
+  @media only screen and (max-width: 22em) {
+    html {
+      font-size: 45%; } }
 
 ::selection {
   background-color: #f7f7f7;
@@ -147,6 +150,12 @@ body {
   font-weight: 500;
   color: #ff8580;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4), 0px 6px 11px rgba(255, 133, 128, 0.1), 0px 12px 18px rgba(255, 133, 128, 0.1); }
+  @media only screen and (max-width: 25em) {
+    #jack {
+      display: block; } }
+  @media only screen and (max-width: 22em) {
+    #jack {
+      display: block; } }
 
 .u-center-text {
   text-align: center !important; }
@@ -215,6 +224,11 @@ body {
       grid-template-rows: min-content min-content min-content;
       grid-template-columns: 1fr;
       grid-template-areas: "pic" "text" "vr"; } }
+  @media only screen and (max-width: 22em) {
+    .about {
+      padding: 0 20rem;
+      width: 100%;
+      grid-template-rows: minmax(min-content, max-content) min-content min-content; } }
   .about__picture {
     grid-area: pic;
     width: 34rem;
@@ -228,6 +242,18 @@ body {
         width: 40rem;
         height: 35vh;
         margin: 0 auto; } }
+    @media only screen and (max-width: 25em) {
+      .about__picture {
+        grid-row: 1 / 2;
+        max-width: 90%;
+        max-height: 100%;
+        margin: 0 auto; } }
+    @media only screen and (max-width: 22em) {
+      .about__picture {
+        grid-row: 1 / 2;
+        max-width: 85%;
+        max-height: 100%;
+        margin: 0 auto; } }
   .about__text {
     width: 35rem;
     grid-area: text;
@@ -236,7 +262,8 @@ body {
     @media only screen and (max-width: 50em) {
       .about__text {
         grid-row: 2 / -1;
-        width: 100%; } }
+        width: 75%;
+        margin: 0 auto; } }
     .about__text p {
       margin-bottom: 1rem; }
       @media only screen and (max-width: 50em) {
@@ -401,7 +428,7 @@ body {
       padding-top: 2vh;
       padding: 0 1rem;
       grid-column-gap: 2rem; } }
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 22em) {
     .project {
       height: min-content;
       align-items: center; } }
@@ -550,7 +577,7 @@ body {
   padding: 20rem 15vw;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100vh, 50vw 100%, 0 100vh);
   clip-path: polygon(0 0, 100% 0, 100% 90vh, 50vw 100%, 0 90vh); }
-  @media only screen and (max-width: 62.5em) {
+  @media only screen and (max-width: 50em) {
     .header {
       justify-content: center;
       align-items: center;
@@ -558,7 +585,26 @@ body {
       padding: 20rem 0;
       grid-template-rows: 15rem 15rem 10rem;
       text-align: center;
-      margin: 0 auto; } }
+      margin: 0 auto;
+      display: grid;
+      grid-template-rows: 1fr 1fr repeat(2, minmax(1fr, min-content)); } }
+  @media only screen and (max-width: 37.5em) {
+    .header {
+      padding: 20rem 5rem;
+      grid-template-columns: 65vw;
+      grid-row-gap: 3rem;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      height: 100vh; } }
+  @media only screen and (max-width: 25em) {
+    .header {
+      padding: 20rem 5rem;
+      grid-template-columns: 65vw;
+      grid-row-gap: 3rem; } }
+  @media only screen and (max-width: 22em) {
+    .header {
+      padding: 20rem 0;
+      grid-template-columns: 75vw;
+      grid-row-gap: 5rem; } }
   .header__text {
     color: #E9E4DE;
     backface-visibility: hidden;
@@ -566,7 +612,7 @@ body {
     font-family: 'Raleway', sans-serif;
     animation: moveInBottom .5s ease-out .8s;
     animation-fill-mode: backwards; }
-    @media only screen and (max-width: 62.5em) {
+    @media only screen and (max-width: 50em) {
       .header__text {
         margin: 0 auto;
         text-align: center; } }
@@ -577,7 +623,7 @@ body {
     animation-fill-mode: backwards; }
     .header__links > a:not(:last-child) {
       margin-right: 3vw; }
-    @media only screen and (max-width: 62.5em) {
+    @media only screen and (max-width: 50em) {
       .header__links {
         margin: 0 auto; } }
 
@@ -655,6 +701,12 @@ body {
   @media only screen and (max-width: 37.5em) {
     .section-about {
       height: 140vh; } }
+  @media only screen and (max-width: 25em) {
+    .section-about {
+      height: 150vh; } }
+  @media only screen and (max-width: 22em) {
+    .section-about {
+      height: 160vh; } }
 
 .section-skills {
   height: 110vh;
@@ -671,7 +723,21 @@ body {
   @media only screen and (max-width: 50em) {
     .section-skills {
       height: 200vh;
-      clip-path: polygon(0 0, 50% 5rem, 100% 0, 100% 98%, 50vw 100%, 0 98%); } }
+      clip-path: polygon(0 0, 50% 2%, 100% 0, 100% 98%, 50vw 100%, 0 98%);
+      margin-top: -12rem;
+      padding: 15rem 0; } }
+  @media only screen and (max-width: 37.5em) {
+    .section-skills {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
+  @media only screen and (max-width: 25em) {
+    .section-skills {
+      height: 200vh;
+      padding-top: 10rem;
+      background-image: linear-gradient(to right bottom, rgba(68, 83, 115, 0.9), rgba(51, 51, 51, 0.9)); } }
+  @media only screen and (max-width: 22em) {
+    .section-skills {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      height: 220vh; } }
 
 .skills {
   display: grid;
@@ -709,7 +775,16 @@ body {
       height: 300vh; } }
   @media only screen and (max-width: 37.5em) {
     .section-work {
-      height: 350vh; } }
+      height: 360vh;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
+  @media only screen and (max-width: 25em) {
+    .section-work {
+      height: 440vh;
+      margin-top: 0;
+      padding: 10rem 0; } }
+  @media only screen and (max-width: 22em) {
+    .section-work {
+      height: 460vh; } }
 
 .section-contact {
   background-image: linear-gradient(to right bottom, rgba(68, 83, 115, 0.8), rgba(51, 51, 51, 0.9)), url(../img/phil-desforges-675158-unsplash-copy.jpg);
@@ -720,3 +795,12 @@ body {
   z-index: 10;
   padding: 14rem 0;
   clip-path: polygon(0 7%, 50% 12%, 100% 7%, 100% 105vh, 50vw 100%, 0 105vh); }
+  @media only screen and (max-width: 37.5em) {
+    .section-contact {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      height: 55rem;
+      padding: 10rem 0; } }
+  @media only screen and (max-width: 25em) {
+    .section-contact {
+      height: 60rem;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
