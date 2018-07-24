@@ -632,18 +632,48 @@ body {
   position: absolute;
   height: 7rem;
   z-index: 100;
+  width: 100%;
   margin: 2rem;
   animation: moveInTop .5s ease-out .8s;
   animation-fill-mode: backwards; }
+  @media only screen and (max-width: 50em) {
+    .navbar {
+      margin: 0;
+      background-color: #333;
+      height: 5rem;
+      flex-direction: column;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); } }
+  .navbar__hamburger {
+    font-size: 3rem;
+    display: none;
+    margin-left: 2rem;
+    color: #E9E4DE; }
+    @media only screen and (max-width: 50em) {
+      .navbar__hamburger {
+        display: block;
+        cursor: pointer;
+        width: 3rem; } }
+  .navbar__toggle {
+    display: none; }
   .navbar__list {
     list-style: none;
     color: #E9E4DE;
     font-size: 1.8rem; }
+    @media only screen and (max-width: 50em) {
+      .navbar__list {
+        display: none;
+        width: 100%;
+        height: 60rem;
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+        background-color: #333333; } }
   .navbar__item {
     display: inline;
     position: relative; }
     .navbar__item:not(:last-child) {
       margin-right: .5rem; }
+    @media only screen and (max-width: 50em) {
+      .navbar__item {
+        border-bottom: 1px solid white; } }
   .navbar__item::before {
     content: "";
     position: absolute;
@@ -663,6 +693,21 @@ body {
     display: inline;
     padding: 1.5rem 3rem;
     margin: 1rem; }
+    @media only screen and (max-width: 50em) {
+      .navbar__link:link, .navbar__link:visited {
+        display: block;
+        margin: 0;
+        margin-bottom: 1rem;
+        color: #eee;
+        font-weight: 700; }
+        .navbar__link:link:hover, .navbar__link:visited:hover {
+          color: #ff8580; } }
+
+#toggle:checked + .navbar__list {
+  display: block; }
+
+#toggle:checked + .navbar {
+  height: 50rem; }
 
 .active {
   position: fixed;
@@ -675,6 +720,9 @@ body {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   animation: fadeIn .2s ease-out;
   animation-fill-mode: backwards; }
+  @media only screen and (max-width: 50em) {
+    .active {
+      padding: 0; } }
 
 @-webkit-keyframes fadeIn {
   0% {
