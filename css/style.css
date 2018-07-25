@@ -258,7 +258,7 @@ body {
     width: 35rem;
     grid-area: text;
     color: #616161;
-    font-size: 1.5rem; }
+    font-size: 1.4rem; }
     @media only screen and (max-width: 50em) {
       .about__text {
         grid-row: 2 / -1;
@@ -392,6 +392,10 @@ body {
 .contact-heading,
 .contact-hr {
   opacity: 0; }
+  @media only screen and (max-width: 22em) {
+    .contact-heading,
+    .contact-hr {
+      opacity: 1; } }
 
 .animateFromLeft {
   animation: moveInFarLeft 0.5s ease-out;
@@ -514,8 +518,28 @@ body {
   animation: moveInFarRight 0.5s ease-out;
   opacity: 1; }
 
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: min-content;
+  grid-gap: 10rem;
+  width: 80%;
+  margin: 0 auto; }
+  @media only screen and (max-width: 50em) {
+    .skills {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, min-content);
+      width: 50%; } }
+  @media only screen and (max-width: 37.5em) {
+    .skills {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, min-content);
+      width: 60%; } }
+  .skills:nth-child(odd) {
+    height: 20vh; }
+
 .skill {
-  height: 45rem;
+  height: 48rem;
   background-color: rgba(233, 228, 222, 0.8);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   border-radius: 2px;
@@ -642,7 +666,9 @@ body {
       background-color: #333;
       height: 5rem;
       flex-direction: column;
-      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); } }
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+      position: fixed;
+      animation: 0; } }
   .navbar__hamburger {
     font-size: 3rem;
     display: none;
@@ -722,7 +748,8 @@ body {
   animation-fill-mode: backwards; }
   @media only screen and (max-width: 50em) {
     .active {
-      padding: 0; } }
+      padding: 0;
+      display: hidden; } }
 
 @-webkit-keyframes fadeIn {
   0% {
@@ -736,25 +763,25 @@ body {
 
 .section-about {
   background-color: #eee;
-  height: 110vh;
+  height: 120vh;
   margin-top: -10rem;
   padding: 15rem 0;
   padding-bottom: 20rem; }
   @media only screen and (max-width: 75em) {
     .section-about {
-      height: 90vh; } }
+      height: 110vh; } }
   @media only screen and (max-width: 50em) {
     .section-about {
-      height: 125vh; } }
+      height: 140vh; } }
   @media only screen and (max-width: 37.5em) {
     .section-about {
-      height: 140vh; } }
+      height: 150vh; } }
   @media only screen and (max-width: 25em) {
     .section-about {
-      height: 150vh; } }
+      height: 160vh; } }
   @media only screen and (max-width: 22em) {
     .section-about {
-      height: 160vh; } }
+      height: 170vh; } }
 
 .section-skills {
   height: 110vh;
@@ -779,33 +806,13 @@ body {
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
   @media only screen and (max-width: 25em) {
     .section-skills {
-      height: 200vh;
+      height: 210vh;
       padding-top: 10rem;
       background-image: linear-gradient(to right bottom, rgba(68, 83, 115, 0.9), rgba(51, 51, 51, 0.9)); } }
   @media only screen and (max-width: 22em) {
     .section-skills {
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
       height: 220vh; } }
-
-.skills {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: min-content;
-  grid-gap: 10rem;
-  width: 80%;
-  margin: 0 auto; }
-  @media only screen and (max-width: 50em) {
-    .skills {
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(3, min-content);
-      width: 50%; } }
-  @media only screen and (max-width: 37.5em) {
-    .skills {
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(3, min-content);
-      width: 60%; } }
-  .skills:nth-child(odd) {
-    height: 20vh; }
 
 .section-work {
   background-color: #eee;

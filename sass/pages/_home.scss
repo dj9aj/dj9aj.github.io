@@ -13,30 +13,30 @@
 
 .section-about {
     background-color: $color-grey-light-2;
-    height: 110vh;
+    height: 120vh;
     margin-top: -10rem;
     padding: 15rem 0;
     padding-bottom: 20rem;
 
     @media only screen and (max-width: $bp-largest) {
-        height: 90vh;
+        height: 110vh;
     }
 
     @media only screen and (max-width: $bp-medium) {
-        height: 125vh;
-    }
-
-    @media only screen and (max-width: $bp-small) {
         height: 140vh;
     }
 
-    @media only screen and (max-width: $bp-smaller) {
+    @media only screen and (max-width: $bp-small) {
         height: 150vh;
+    }
+
+    @media only screen and (max-width: $bp-smaller) {
+        height: 160vh;
         
     }
 
     @media only screen and (max-width: $bp-smallest) {
-        height: 160vh;
+        height: 170vh;
     }
 
     
@@ -79,7 +79,7 @@
     }
 
     @media only screen and (max-width: $bp-smaller) {
-        height: 200vh;
+        height: 210vh;
         padding-top: 10rem;
         background-image: linear-gradient(
         to right bottom,
@@ -95,31 +95,7 @@
     }
 }
 
-.skills {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: min-content;
-    grid-gap: 10rem;
-    width: 80%;
-    margin: 0 auto;
 
-    @media only screen and (max-width: $bp-medium) {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, min-content); 
-        width: 50%;
-    }
-
-    @media only screen and (max-width: $bp-small) {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, min-content); 
-        width: 60%;
-    }
-
-
-    &:nth-child(odd) {
-        height: 20vh;   
-    }
-}
    
 
 
@@ -187,6 +163,7 @@
         height: 60rem;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
+
     
 }
 

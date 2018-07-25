@@ -29,8 +29,14 @@ window.onscroll = function changeNav(){
     const scrollPosY = window.pageYOffset | document.body.scrollTop;
     // alert(window.scrollY);
 
-    if(scrollPosY > 800) {
+    if(scrollPosY > 500) {
         navBar.classList.add('active');
+         
+         
+    }
+
+    if(scrollPosY > 800) {
+       
         skillsHeading.classList.add('animateFromLeft');
         skillsHr.classList.add('animateFromRight');  
          

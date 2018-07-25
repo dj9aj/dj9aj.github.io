@@ -1,6 +1,32 @@
+.skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: min-content;
+    grid-gap: 10rem;
+    width: 80%;
+    margin: 0 auto;
+
+    @media only screen and (max-width: $bp-medium) {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, min-content); 
+        width: 50%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, min-content); 
+        width: 60%;
+    }
+
+
+    &:nth-child(odd) {
+        height: 20vh;   
+    }
+}
+
 .skill {
     // width: 30rem;
-    height: 45rem;
+    height: 48rem;
     background-color: rgba(233, 228, 222, 0.8);
     box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
     border-radius: 2px;

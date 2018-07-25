@@ -43,7 +43,10 @@
 .contact-hr {
     opacity: 0;
     // animation: moveInBottom;
-    
+
+    @media only screen and (max-width: $bp-smallest) {
+        opacity: 1;
+    }
 }
 
 .animateFromLeft {

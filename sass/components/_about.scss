@@ -31,6 +31,7 @@
         grid-area: pic;
         width: 34rem;
         height: 30rem;
+        // margin-top: 1rem;
         filter: contrast(80%);
         box-shadow: 0 2rem 5rem rgba($color-black, 0.1);
         overflow: hidden;
@@ -65,7 +66,7 @@
         width: 35rem;
         grid-area: text;
         color: $color-grey-light-5;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
 
         @media only screen and (max-width: $bp-medium) {
            
