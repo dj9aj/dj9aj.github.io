@@ -17,21 +17,18 @@
         grid-template-areas: "pic"
                              "text"
                              "vr";
-
     }
 
     @media only screen and (max-width: $bp-smallest) {
        padding: 0 20rem;
        width: 100%;
        grid-template-rows: minmax(min-content, max-content) min-content min-content;
-
     }
 
     &__picture {
         grid-area: pic;
         width: 34rem;
         height: 30rem;
-        // margin-top: 1rem;
         filter: contrast(80%);
         box-shadow: 0 2rem 5rem rgba($color-black, 0.1);
         overflow: hidden;
@@ -40,16 +37,14 @@
             grid-row: 1 / 2;
             width: 40rem;
             height: 35vh;
-            margin: 0 auto;
-            
+            margin: 0 auto; 
         }
 
         @media only screen and (max-width: $bp-smaller) {
             grid-row: 1 / 2;
             max-width: 90%;
             max-height: 100%;
-            margin: 0 auto;
-            
+            margin: 0 auto; 
         }
 
         @media only screen and (max-width: $bp-smallest) {
@@ -57,10 +52,8 @@
             max-width: 85%;
             max-height: 100%;
             margin: 0 auto;
-            
         }
-    }    
-        
+    }     
 
     &__text {
         width: 35rem;
@@ -69,7 +62,6 @@
         font-size: 1.4rem;
 
         @media only screen and (max-width: $bp-medium) {
-           
             grid-row: 2 / -1;
             width: 75%;
             margin: 0 auto;
@@ -79,7 +71,6 @@
             margin-bottom: 1rem;
 
             @media only screen and (max-width: $bp-medium) {
-           
                 margin-bottom: 3vh;
             }
         }
@@ -92,48 +83,36 @@
         border-radius: 2px;
 
         @media only screen and (max-width: $bp-medium) {
-           
             width: 100%;
             height: 100%;
         }
-       
     }
 
     &__vr {
         height: 30rem;
-        // margin-top: 1rem;
-        // margin-right: 1rem;
         grid-area: hr;
         margin: 0 2rem;
         width: 3px;
-        background-color: $color-primary-dark-2;
+        background-color: $color-primary;
 
         @media only screen and (max-width: $bp-medium) {
             grid-area: vr;
             visibility: hidden;
-           width: 0;
-           height: 0;
-           opacity: 0;
-           margin: 0;
+            width: 0;
+            height: 0;
+            opacity: 0;
+            margin: 0;
         }
-    
-    }
-    
+    } 
 }
 
 .about-heading,
 .about-hr {
     opacity: 0;
-    // animation: moveInBottom;
-    
 }
 
-
-
 .animateFromLeft {
-    // animation: moveInBottom 1s ease-out;
     animation: moveInFarLeft 0.5s ease-out;
-    // animation-fill-mode: backwards;
     opacity: 1;
 }
 

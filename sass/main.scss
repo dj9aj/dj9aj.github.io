@@ -1,4 +1,3 @@
-@import "abstracts/mixins";
 @import "abstracts/variables";
 
 @import "base/animations";
@@ -7,15 +6,12 @@
 @import "base/utilities";
 
 @import "components/about";
-@import "components/bg-video";
 @import "components/button";
 @import "components/contact";
-@import "components/header-content";
 @import "components/project";
 @import "components/skill";
 
 
-@import "layout/footer";
 @import "layout/header";
 @import "layout/navbar";
 

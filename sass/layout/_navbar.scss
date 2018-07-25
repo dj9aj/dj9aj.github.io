@@ -23,7 +23,7 @@
         font-size: 3rem;
         display: none;
         margin-left: 2rem;
-        color: $color-primary-light-new;
+        color: $color-tertiary;
         
 
         @media only screen and (max-width: $bp-medium) {
@@ -40,7 +40,7 @@
     
     &__list {
         list-style: none;
-        color: $color-primary-light-new;
+        color: $color-tertiary;
         font-size: 1.8rem;
 
         @media only screen and (max-width: $bp-medium) {
@@ -80,7 +80,7 @@
         left: 23%;
         height: 1px;
         width: 52%;
-        background-color: $color-primary-new;
+        background-color: $color-secondary;
         transform: scaleX(0);
         transition: transform .2s,
                     height .4s .2s; 
@@ -93,7 +93,7 @@
 
     &__link:link,
     &__link:visited {
-        color: $color-primary-light-new;
+        color: $color-tertiary;
         text-decoration: none;
         text-transform: uppercase;
         display: inline;
@@ -113,7 +113,7 @@
             // border-bottom: 1px solid $color-primary-new;
 
             &:hover {
-                color: $color-primary-new;
+                color: $color-secondary;
             }
         }    
     }    

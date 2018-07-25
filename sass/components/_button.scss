@@ -26,9 +26,9 @@
     }
 
 
-    &--blue {
-        background-color: rgba(255,133,128, 0.9);
-        color: white;
+    &--red {
+        background-color: rgba($color-secondary, 0.9);
+        color: $color-white;
     }    
     
 }
@@ -37,19 +37,19 @@
     &:link,
     &:visited {
         font-size: $default-font-size;
-        color: $color-primary-new;
+        color: $color-secondary;
         // Set to inline-block so that margin, padding etc can be applied. <a> tags by default can only have horizontal padding and margin applied 
         display: inline-block;
         text-decoration: none;   
-        border-bottom: 1px solid $color-primary-new;
+        border-bottom: 1px solid $color-secondary;
         // Can use pixels if amounts are very small
         padding: 3px;
         transition: all .2s ease-in;
     }
 
     &:hover {
-        background-color: $color-primary-new;
-        color: $color-primary-light-new;
+        background-color: $color-secondary;
+        color: $color-tertiary;
         box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
         // transform: translateY(-1px);
     }

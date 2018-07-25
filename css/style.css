@@ -88,8 +88,8 @@ html {
       font-size: 45%; } }
 
 ::selection {
-  background-color: #f7f7f7;
-  color: #fff; }
+  color: #fff;
+  background-color: #ff8580; }
 
 body {
   font-family: 'Raleway', sans-serif;
@@ -103,7 +103,6 @@ body {
   backface-visibility: hidden;
   font-size: 4rem;
   font-weight: 400;
-  font-family: 'Raleway', sans-serif;
   letter-spacing: .2rem;
   animation: moveInLeft .8s ease-out;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4), 0px 6px 11px rgba(255, 133, 128, 0.1), 0px 12px 18px rgba(255, 133, 128, 0.1); }
@@ -113,8 +112,7 @@ body {
   font-size: 3rem;
   font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: .2rem;
-  font-family: 'Raleway', sans-serif; }
+  letter-spacing: .2rem; }
   .heading-secondary--dark {
     color: #616161; }
   .heading-secondary--light {
@@ -124,8 +122,7 @@ body {
   color: #616161;
   font-size: 1.8rem;
   text-transform: uppercase;
-  font-weight: 500;
-  font-family: 'Raleway', sans-serif; }
+  font-weight: 500; }
   .heading-tertiary--dark {
     color: #616161; }
   .heading-tertiary--light {
@@ -152,9 +149,6 @@ body {
   color: #ff8580;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4), 0px 6px 11px rgba(255, 133, 128, 0.1), 0px 12px 18px rgba(255, 133, 128, 0.1); }
   @media only screen and (max-width: 25em) {
-    #jack {
-      display: block; } }
-  @media only screen and (max-width: 22em) {
     #jack {
       display: block; } }
 
@@ -311,20 +305,6 @@ body {
   100% {
     opacity: 1; } }
 
-.bg-video {
-  position: absolute;
-  top: 25;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-  opacity: .25;
-  margin-top: -10rem;
-  overflow: hidden; }
-  .bg-video__content {
-    height: 100%;
-    width: 100%;
-    object-fit: cover; }
-
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -345,9 +325,9 @@ body {
   transform: translateY(-1px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
-.btn--blue {
+.btn--red {
   background-color: rgba(255, 133, 128, 0.9);
-  color: white; }
+  color: #fff; }
 
 .btn-text:link, .btn-text:visited {
   font-size: 1.6rem;
@@ -413,7 +393,7 @@ body {
   height: 70vh;
   width: 80%;
   margin: 0 auto;
-  background-color: white;
+  background-color: #fff;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   padding: 0 5rem;
   transition: all .2s;
@@ -536,8 +516,6 @@ body {
       grid-template-columns: 1fr;
       grid-template-rows: repeat(3, min-content);
       width: 60%; } }
-  .skills:nth-child(odd) {
-    height: 20vh; }
 
 .skill {
   height: 48rem;
@@ -549,7 +527,7 @@ body {
   backface-visibility: hidden;
   opacity: 0; }
   .skill:nth-child(odd) {
-    height: 35rem; }
+    height: 40rem; }
   .skill__icon {
     font-size: 6rem;
     padding-top: 3rem;
@@ -583,9 +561,6 @@ body {
 .flipRound {
   animation: flip 0.8s ease-out;
   opacity: 1; }
-
-.footer {
-  background-color: #aaa; }
 
 .header {
   height: 95vh;
