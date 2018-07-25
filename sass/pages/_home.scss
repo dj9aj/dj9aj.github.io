@@ -1,17 +1,5 @@
-.container {
-    // display: grid;
-    // grid-template-rows: 5rem 85vh repeat(4, min-content min-content min-content min-content min-content);
-    // grid-template-columns: [sidebar-start] 20rem [sidebar-end full-start] .5fr [center-start] 
-    //                        repeat(8, [col-start] minmax(min-content, 12rem) [col-end]) [center-end] .5fr [full-end];
-    // grid-template-columns: [full-start] 1fr repeat(8, [col-start] minmax(14rem) [col-end]) 1fr [full-end];
-
-    display: flex;
-    flex-direction: column;
-    
-   
-}
-
 .section-about {
+
     background-color: $color-grey-light-2;
     height: 120vh;
     margin-top: -10rem;
@@ -38,19 +26,13 @@
     @media only screen and (max-width: $bp-smallest) {
         height: 170vh;
     }
-
-    
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-   
 }
 
 .section-skills {
+
     height: 110vh;
     padding: 20rem 0;
     z-index: 10;
-    
     margin-top: -17rem;
     background-image: linear-gradient(
         to right bottom,
@@ -59,9 +41,8 @@
         url(../img/laptop-desk-large.jpeg);
     background-size: cover;
     background-position: center;
+    -webkit-clip-path: polygon(0 7%, 50% 12%, 100% 7%, 100% 105vh, 50vw 100%, 0 105vh);
     clip-path: polygon(0 7%, 50% 12%, 100% 7%, 100% 105vh, 50vw 100%, 0 105vh);
-    // clip-path: polygon(0 0, 50vw 5vh, 100% 0, 100% 100%, 0 100%);
-    // clip-path: polygon(0 0, 100% 0, 100% 95vh, 50vw 100%, 0 95vh);
 
     @media only screen and (max-width: $bp-largest) {
         height: 90vh;
@@ -69,38 +50,31 @@
 
     @media only screen and (max-width: $bp-medium) {
         height: 200vh;
+        -webkit-clip-path: polygon(0 0, 50% 2%, 100% 0, 100% 98%, 50vw 100%, 0 98%);
         clip-path: polygon(0 0, 50% 2%, 100% 0, 100% 98%, 50vw 100%, 0 98%);
         margin-top: -12rem;
         padding: 15rem 0;
     }
 
     @media only screen and (max-width: $bp-small) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
 
     @media only screen and (max-width: $bp-smaller) {
         height: 210vh;
         padding-top: 10rem;
-        // background-image: linear-gradient(
-        // to right bottom,
-        // rgba($color-primary-dark-2, 0.9),
-        // rgba($color-grey-dark-3, 0.9));
     }
 
     @media only screen and (max-width: $bp-smallest) {
-        
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-        // padding: 10rem 0;
         height: 220vh;
     }
 }
 
-
-   
-
-
-
 .section-work {
+
     background-color: $color-grey-light-2;
     height: 470vh;
     margin-top: -5rem;
@@ -114,18 +88,15 @@
         height: 350vh;
     }
 
-
-
     @media only screen and (max-width: $bp-medium) {
         height: 300vh;
     }
 
     @media only screen and (max-width: $bp-small) {
         height: 360vh;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
-
-   
 
     @media only screen and (max-width: $bp-smaller) {
         height: 440vh;
@@ -136,24 +107,26 @@
     @media only screen and (max-width: $bp-smallest) {
         height: 460vh;
     }
-    // overflow: hidden;
 }
 
 .section-contact {
+    
     background-image: linear-gradient(
         to right bottom,
         rgba($color-primary, 0.8),
         rgba($color-grey-dark-3, 0.9)),
         url(../img/mac-keyboard.jpg);
-        height: 50rem;
-        margin-top: -8rem;
-        background-size: cover;
+    height: 50rem;
+    margin-top: -8rem;
+    background-size: cover;
     background-position: center;
     z-index: 10;
     padding: 14rem 0;
+    -webkit-clip-path: polygon(0 7%, 50% 12%, 100% 7%, 100% 105vh, 50vw 100%, 0 105vh);
     clip-path: polygon(0 7%, 50% 12%, 100% 7%, 100% 105vh, 50vw 100%, 0 105vh);
 
     @media only screen and (max-width: $bp-small) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
         height: 55rem;
         padding: 10rem 0;
@@ -161,10 +134,9 @@
 
     @media only screen and (max-width: $bp-smaller) {
         height: 60rem;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    }
-
-    
+    } 
 }
 
 

@@ -1,83 +1,63 @@
-// var nav = new Waypoint({
-//     element: document.querySelector('.navbar-fixed'),
-//     handler: function () {
-//       console.log('Basic waypoint triggered');
-//       this.element.classList.add("active");
-//     }
-//   })
+const elements = {
+    aboutHeading: document.querySelector('.about-heading'),
+    aboutHr: document.querySelector('.about-hr'),
+    contactHeading: document.querySelector('.contact-heading'),
+    contactHr: document.querySelector('.contact-hr'),
+    links: document.getElementsByClassName("navbar__link"),
+    navBar: document.querySelector('.navbar'),
+    skill: document.querySelectorAll('.skill'), 
+    skillsHeading: document.querySelector('.skills-heading'),
+    skillsHr: document.querySelector('.skills-hr'),
+    workHeading: document.querySelector('.work-heading'),
+    workHr: document.querySelector('.work-hr')
+}
 
-const scrollPosY = window.pageYOffset | document.body.scrollTop;
-const body = document.querySelector("#body");
-const navBar = document.querySelector('.navbar');
-const aboutHeading = document.querySelector('.about-heading');
-const aboutHr = document.querySelector('.about-hr');
-const skillsHeading = document.querySelector('.skills-heading');
-const skillsHr = document.querySelector('.skills-hr');
-const skill = document.querySelectorAll('.skill');
-const workHeading = document.querySelector('.work-heading');
-const workHr = document.querySelector('.work-hr');
-const contactHeading = document.querySelector('.contact-heading');
-const contactHr = document.querySelector('.contact-hr');
-
-const skills = Array.from(document.querySelectorAll('.skill'));
-
-// body.onscoll = function changeClass() {
-//     nav.classList.add('.active');
-// }
+const skills = Array.from(elements.skill);
 
 window.onscroll = function changeNav(){
     const scrollPosY = window.pageYOffset | document.body.scrollTop;
-    // alert(window.scrollY);
-
+    // Start About section animation
+    if (scrollPosY > 190) {
+        elements.aboutHeading.classList.add('animateFromLeft');
+        elements.aboutHr.classList.add('animateFromRight'); 
+    } 
+    // Remove fixed navbar
+    if(scrollPosY <= 400) {
+        elements.navBar.classList.remove('fixed'); 
+    } 
+    // Add fixed navbar
     if(scrollPosY > 500) {
-        navBar.classList.add('active');
-         
-         
-    }
-
+        elements.navBar.classList.add('fixed');
+    }     
+    // Start Skills section animation
     if(scrollPosY > 800) {
-       
-        skillsHeading.classList.add('animateFromLeft');
-        skillsHr.classList.add('animateFromRight');  
-         
+        elements.skillsHeading.classList.add('animateFromLeft');
+        elements.skillsHr.classList.add('animateFromRight');  
     }
-    
+    // Start skills flip animation
     if(scrollPosY > 1000) {
         skills.forEach(skill => {
             skill.classList.add('flipRound'); 
         });
     }
-
+    // Start Work section animation
     if (scrollPosY > 1600) {
-        workHeading.classList.add('animateFromLeft');
-        workHr.classList.add('animateFromRight'); 
+        elements.workHeading.classList.add('animateFromLeft');
+        elements.workHr.classList.add('animateFromRight'); 
     }    
-
-    
-    if (scrollPosY > 190) {
-        aboutHeading.classList.add('animateFromLeft');
-        aboutHr.classList.add('animateFromRight'); 
-    }  
+    // Start Contact section animation
     if (scrollPosY > 5200) {
-        contactHeading.classList.add('animateFromLeft');
-        contactHr.classList.add('animateFromRight'); 
+        elements.contactHeading.classList.add('animateFromLeft');
+        elements.contactHr.classList.add('animateFromRight'); 
     }  
-
-    if(scrollPosY <= 400) {
-        navBar.classList.remove('active'); 
-    } 
-    
-    // else if ()
 }
 
-const elements = document.getElementsByClassName("navbar__link");
+
 const toggle = document.getElementById('toggle');
 
-
-Array.from(elements).forEach(el => {
+// Remove navbar dropdown if hamburger is not checked
+Array.from(elements.links).forEach(el => {
     el.addEventListener('click', e => {
         toggle.checked = false;
     })
 })
-
-

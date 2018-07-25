@@ -70,6 +70,24 @@
     opacity: 1;
     transform: rotateY(0); } }
 
+.animateFromLeft {
+  animation: moveInFarLeft 0.5s ease-out;
+  opacity: 1; }
+
+.animateFromRight {
+  animation: moveInFarRight 0.5s ease-out;
+  opacity: 1; }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.flipRound {
+  animation: flip 0.8s ease-out;
+  opacity: 1; }
+
 *,
 *::after,
 *::before {
@@ -298,12 +316,6 @@ body {
 .animateFromRight {
   animation: moveInFarRight 0.5s ease-out;
   opacity: 1; }
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
 
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -595,11 +607,6 @@ body {
       grid-row-gap: 3rem;
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
       height: 100vh; } }
-  @media only screen and (max-width: 25em) {
-    .header {
-      padding: 20rem 5rem;
-      grid-template-columns: 65vw;
-      grid-row-gap: 3rem; } }
   @media only screen and (max-width: 22em) {
     .header {
       padding: 20rem 0;
@@ -617,9 +624,7 @@ body {
         margin: 0 auto;
         text-align: center; } }
   .header__links {
-    /* Animation name, animation duration, animation-timing-function, animation delay */
     animation: moveInBottom .5s ease-out .8s;
-    /* Automatically apply the styles of the 0% before the animation starts */
     animation-fill-mode: backwards; }
     .header__links > a:not(:last-child) {
       margin-right: 3vw; }
@@ -711,7 +716,7 @@ body {
 #toggle:checked + .navbar {
   height: 50rem; }
 
-.active {
+.fixed {
   position: fixed;
   background-color: #333;
   width: 100%;
@@ -723,19 +728,9 @@ body {
   animation: fadeIn .2s ease-out;
   animation-fill-mode: backwards; }
   @media only screen and (max-width: 50em) {
-    .active {
+    .fixed {
       padding: 0;
       display: hidden; } }
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-.container {
-  display: flex;
-  flex-direction: column; }
 
 .section-about {
   background-color: #eee;
@@ -767,6 +762,7 @@ body {
   background-image: linear-gradient(to right bottom, rgba(68, 83, 115, 0.8), rgba(51, 51, 51, 0.6)), url(../img/laptop-desk-large.jpeg);
   background-size: cover;
   background-position: center;
+  -webkit-clip-path: polygon(0 7%, 50% 12%, 100% 7%, 100% 105vh, 50vw 100%, 0 105vh);
   clip-path: polygon(0 7%, 50% 12%, 100% 7%, 100% 105vh, 50vw 100%, 0 105vh); }
   @media only screen and (max-width: 75em) {
     .section-skills {
@@ -774,11 +770,13 @@ body {
   @media only screen and (max-width: 50em) {
     .section-skills {
       height: 200vh;
+      -webkit-clip-path: polygon(0 0, 50% 2%, 100% 0, 100% 98%, 50vw 100%, 0 98%);
       clip-path: polygon(0 0, 50% 2%, 100% 0, 100% 98%, 50vw 100%, 0 98%);
       margin-top: -12rem;
       padding: 15rem 0; } }
   @media only screen and (max-width: 37.5em) {
     .section-skills {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
   @media only screen and (max-width: 25em) {
     .section-skills {
@@ -786,6 +784,7 @@ body {
       padding-top: 10rem; } }
   @media only screen and (max-width: 22em) {
     .section-skills {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
       height: 220vh; } }
 
@@ -806,6 +805,7 @@ body {
   @media only screen and (max-width: 37.5em) {
     .section-work {
       height: 360vh;
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
   @media only screen and (max-width: 25em) {
     .section-work {
@@ -824,13 +824,16 @@ body {
   background-position: center;
   z-index: 10;
   padding: 14rem 0;
+  -webkit-clip-path: polygon(0 7%, 50% 12%, 100% 7%, 100% 105vh, 50vw 100%, 0 105vh);
   clip-path: polygon(0 7%, 50% 12%, 100% 7%, 100% 105vh, 50vw 100%, 0 105vh); }
   @media only screen and (max-width: 37.5em) {
     .section-contact {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
       height: 55rem;
       padding: 10rem 0; } }
   @media only screen and (max-width: 25em) {
     .section-contact {
       height: 60rem;
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }

@@ -12,13 +12,10 @@
         display: flex;
         justify-content: center;
         list-style: none;
-
-        
     }
 
     &__item {
         display: inline;
-        
         
         &:not(:last-child) {
             margin-right: 5rem;
@@ -42,7 +39,6 @@
 .contact-heading,
 .contact-hr {
     opacity: 0;
-    // animation: moveInBottom;
 
     @media only screen and (max-width: $bp-largest) {
         opacity: 1;
@@ -50,9 +46,7 @@
 }
 
 .animateFromLeft {
-    // animation: moveInBottom 1s ease-out;
     animation: moveInFarLeft 0.5s ease-out;
-    // animation-fill-mode: backwards;
     opacity: 1;
 }
 
