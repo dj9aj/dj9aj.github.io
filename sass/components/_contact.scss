@@ -44,7 +44,7 @@
     opacity: 0;
     // animation: moveInBottom;
 
-    @media only screen and (max-width: $bp-smallest) {
+    @media only screen and (max-width: $bp-largest) {
         opacity: 1;
     }
 }

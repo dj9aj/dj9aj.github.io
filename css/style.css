@@ -95,7 +95,8 @@ body {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  color: #E9E4DE; }
+  color: #E9E4DE;
+  background-color: #333; }
 
 .heading-primary {
   color: #E9E4DE;
@@ -392,7 +393,7 @@ body {
 .contact-heading,
 .contact-hr {
   opacity: 0; }
-  @media only screen and (max-width: 22em) {
+  @media only screen and (max-width: 75em) {
     .contact-heading,
     .contact-hr {
       opacity: 1; } }
@@ -588,7 +589,7 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(68, 83, 115, 0.7), rgba(51, 51, 51, 0.9)), url(../img/rawpixel-678088-unsplash-copy.jpg);
+  background-image: linear-gradient(to right bottom, rgba(68, 83, 115, 0.7), rgba(51, 51, 51, 0.9)), url(../img/hero-image-large.jpg);
   background-size: cover;
   background-position: left;
   z-index: 10;
@@ -788,9 +789,9 @@ body {
   padding: 20rem 0;
   z-index: 10;
   margin-top: -17rem;
-  background-image: linear-gradient(to right bottom, rgba(68, 83, 115, 0.8), rgba(51, 51, 51, 0.6)), url(../img/photo-1499750310107-5fef28a66643.jpeg);
+  background-image: linear-gradient(to right bottom, rgba(68, 83, 115, 0.8), rgba(51, 51, 51, 0.6)), url(../img/laptop-desk-large.jpeg);
   background-size: cover;
-  background-position: left;
+  background-position: center;
   clip-path: polygon(0 7%, 50% 12%, 100% 7%, 100% 105vh, 50vw 100%, 0 105vh); }
   @media only screen and (max-width: 75em) {
     .section-skills {
@@ -807,8 +808,7 @@ body {
   @media only screen and (max-width: 25em) {
     .section-skills {
       height: 210vh;
-      padding-top: 10rem;
-      background-image: linear-gradient(to right bottom, rgba(68, 83, 115, 0.9), rgba(51, 51, 51, 0.9)); } }
+      padding-top: 10rem; } }
   @media only screen and (max-width: 22em) {
     .section-skills {
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
@@ -842,11 +842,11 @@ body {
       height: 460vh; } }
 
 .section-contact {
-  background-image: linear-gradient(to right bottom, rgba(68, 83, 115, 0.8), rgba(51, 51, 51, 0.9)), url(../img/phil-desforges-675158-unsplash-copy.jpg);
+  background-image: linear-gradient(to right bottom, rgba(68, 83, 115, 0.8), rgba(51, 51, 51, 0.9)), url(../img/mac-keyboard.jpg);
   height: 50rem;
   margin-top: -8rem;
   background-size: cover;
-  background-position: left;
+  background-position: center;
   z-index: 10;
   padding: 14rem 0;
   clip-path: polygon(0 7%, 50% 12%, 100% 7%, 100% 105vh, 50vw 100%, 0 105vh); }
