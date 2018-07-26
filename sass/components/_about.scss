@@ -74,9 +74,15 @@
 
         @media only screen and (max-width: $bp-medium) {
             grid-row: 2 / -1;
-            width: 80%;
+            width: 85%;
             margin: 0 auto;
+            
+        }
+
+        @media only screen and (max-width: $bp-smaller) {
+            width: 35rem;
             font-size: 1.6rem;
+            
         }
 
         & p {
