@@ -458,6 +458,11 @@ body {
         grid-row: 2 / 6;
         grid-column: 2 / 7;
         align-self: center; } }
+    @media only screen and (max-width: 50em) {
+      .project__img-portrait--2 {
+        visibility: hidden;
+        width: 0;
+        height: 0; } }
   .project__img-landscape--1 {
     max-width: 100%;
     max-height: 100%;
@@ -466,7 +471,9 @@ body {
     box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1); }
     @media only screen and (max-width: 62.5em) {
       .project__img-landscape--1 {
-        visibility: hidden; } }
+        visibility: hidden;
+        width: 0;
+        height: 0; } }
   .project__img-landscape--2 {
     max-width: 100%;
     max-height: 90%;
@@ -482,9 +489,17 @@ body {
         grid-column: 1 / 4;
         margin-top: 0;
         height: 50%; } }
+    @media only screen and (max-width: 50em) {
+      .project__img-landscape--2 {
+        visibility: hidden;
+        width: 0;
+        height: 0; } }
   .project__content {
     grid-column: 2 / 2;
     padding: 5rem 6vw; }
+    @media only screen and (max-width: 25em) {
+      .project__content {
+        width: 100%; } }
   .project__text {
     font-size: 1.4rem;
     color: #616161; }
@@ -777,7 +792,7 @@ body {
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
   @media only screen and (max-width: 25em) {
     .section-skills {
-      height: 250vh;
+      height: 260vh;
       margin-top: 0;
       padding: 5rem 0;
       background-image: linear-gradient(to right bottom, #445373, #333333); } }
