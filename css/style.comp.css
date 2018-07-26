@@ -587,7 +587,6 @@ body {
       align-items: center;
       grid-row-gap: 1rem;
       padding: 20rem 0;
-      grid-template-rows: 15rem 15rem 10rem;
       text-align: center;
       margin: 0 auto;
       display: grid;
@@ -598,12 +597,12 @@ body {
       grid-template-columns: 65vw;
       grid-row-gap: 3rem;
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-      height: 80vh; } }
+      height: 100vh; } }
   @media only screen and (max-width: 22em) {
     .header {
-      padding: 0;
-      grid-template-columns: 75vw;
-      grid-row-gap: 5rem; } }
+      padding: 15rem 0;
+      grid-template-columns: 100%;
+      grid-row-gap: 2rem; } }
   .header__text {
     color: #E9E4DE;
     backface-visibility: hidden;
