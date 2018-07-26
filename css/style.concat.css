@@ -777,7 +777,7 @@ body {
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
   @media only screen and (max-width: 25em) {
     .section-skills {
-      height: 250vh;
+      height: 280vh;
       background-image: linear-gradient(to right bottom, #445373, #333333); } }
 
 .section-work {
