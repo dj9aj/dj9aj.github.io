@@ -500,7 +500,7 @@ body {
     @media only screen and (max-width: 25em) {
       .project__content {
         width: 100%;
-        padding: 5rem 0; } }
+        padding: 5rem 1rem; } }
   .project__text {
     font-size: 1.4rem;
     color: #616161; }
@@ -819,7 +819,7 @@ body {
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
   @media only screen and (max-width: 25em) {
     .section-work {
-      height: 500vh;
+      height: 520vh;
       margin-top: 0;
       padding: 10rem 0; } }
 
