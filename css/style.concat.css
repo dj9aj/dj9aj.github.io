@@ -106,9 +106,6 @@ html {
   @media only screen and (max-width: 75em) {
     html {
       font-size: 50%; } }
-  @media only screen and (max-width: 22em) {
-    html {
-      font-size: 45%; } }
 
 ::selection {
   color: #fff;
@@ -119,8 +116,7 @@ body {
   font-weight: 400;
   line-height: 1.7;
   color: #E9E4DE;
-  background-color: #333;
-  width: 100%; }
+  background-color: #333; }
 
 .heading-primary {
   color: #E9E4DE;
@@ -229,29 +225,29 @@ body {
 
 .about {
   display: grid;
-  grid-template-rows: min-content;
-  grid-template-columns: "min-content min-content min-content";
+  grid-template-rows: 40vh;
+  grid-template-columns: min-content min-content min-content;
   grid-template-areas: "pic hr text";
   grid-gap: 2rem;
   justify-content: center;
-  width: 50%;
+  width: 75%;
   margin: 0 auto; }
   @media only screen and (max-width: 50em) {
     .about {
       width: 75%;
       grid-row-gap: 7vh;
-      grid-template-rows: min-content min-content min-content;
+      grid-template-rows: 1fr min-content 1fr;
       grid-template-columns: 1fr;
       grid-template-areas: "pic" "text" "vr"; } }
   @media only screen and (max-width: 22em) {
     .about {
-      padding: 0 20rem;
+      padding: 0;
       width: 100%;
-      grid-template-rows: minmax(min-content, max-content) min-content min-content; } }
+      grid-template-rows: min-content min-content min-content; } }
   .about__picture {
     grid-area: pic;
-    width: 34rem;
-    height: 30rem;
+    width: 35rem;
+    height: 100%;
     filter: contrast(80%);
     box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1);
     overflow: hidden; }
@@ -264,15 +260,18 @@ body {
     @media only screen and (max-width: 25em) {
       .about__picture {
         grid-row: 1 / 2;
-        max-width: 90%;
+        max-width: 40rem;
         max-height: 100%;
         margin: 0 auto; } }
     @media only screen and (max-width: 22em) {
       .about__picture {
         grid-row: 1 / 2;
-        max-width: 85%;
-        max-height: 100%;
-        margin: 0 auto; } }
+        max-width: 30rem;
+        max-height: 100%; } }
+  .about__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 2px; }
   .about__text {
     width: 35rem;
     grid-area: text;
@@ -288,14 +287,6 @@ body {
       @media only screen and (max-width: 50em) {
         .about__text p {
           margin-bottom: 3vh; } }
-  .about__img {
-    width: 100%;
-    max-height: 100%;
-    border-radius: 2px; }
-    @media only screen and (max-width: 50em) {
-      .about__img {
-        width: 100%;
-        height: 100%; } }
   .about__vr {
     height: 30rem;
     grid-area: hr;
@@ -612,10 +603,10 @@ body {
       grid-template-columns: 65vw;
       grid-row-gap: 3rem;
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-      height: 120vh; } }
+      height: 100vh; } }
   @media only screen and (max-width: 22em) {
     .header {
-      padding: 20rem 0;
+      padding: 10rem 0;
       grid-template-columns: 75vw;
       grid-row-gap: 5rem; } }
   .header__text {

@@ -37,12 +37,12 @@
         grid-template-columns: 65vw;
         grid-row-gap: 3rem;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-        height: 120vh;
+        height: 100vh;
         
     }
 
     @media only screen and (max-width: $bp-smallest) {
-        padding: 20rem 0;
+        padding: 10rem 0;
         grid-template-columns: 75vw;
         grid-row-gap: 5rem;
     }
