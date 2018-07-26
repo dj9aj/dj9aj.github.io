@@ -10,7 +10,6 @@
     margin: 0 auto;
 
     @media only screen and (max-width: $bp-medium) {
-        width: 75%;
         grid-row-gap: 7vh;
         grid-template-rows: min-content min-content 1fr;
         grid-template-columns: 1fr;
@@ -19,9 +18,8 @@
                              "vr";
     }
 
-    @media only screen and (max-width: $bp-smallest) {
+    @media only screen and (max-width: $bp-smaller) {
        padding: 0;
-       width: 100%;
        grid-template-rows: min-content min-content min-content;
     }
 
@@ -35,22 +33,22 @@
 
         @media only screen and (max-width: $bp-medium) {
             grid-row: 1 / 2;
-            width: 40rem;
-            height: 35vh;
+            // width: 40rem;
+            // height: 35vh;
             margin: 0 auto; 
         }
 
         @media only screen and (max-width: $bp-smaller) {
             grid-row: 1 / 2;
-            max-width: 40rem;
-            max-height: 100%;
+            // max-width: 40rem;
+            // max-height: 100%;
             margin: 0 auto; 
         }
 
         @media only screen and (max-width: $bp-smallest) {
             grid-row: 1 / 2;
-            max-width: 30rem;
-            max-height: 100%;
+            // max-width: 30rem;
+            // max-height: 100%;
             // margin: 0 auto;
         }
     }
