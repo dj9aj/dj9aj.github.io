@@ -531,12 +531,14 @@ body {
   opacity: 0; }
   @media only screen and (max-width: 25em) {
     .skill {
-      height: min-content; } }
+      height: min-content;
+      padding-bottom: 3rem; } }
   .skill:nth-child(odd) {
     height: 40rem; }
     @media only screen and (max-width: 25em) {
       .skill:nth-child(odd) {
-        height: min-content; } }
+        height: min-content;
+        padding-bottom: 3rem; } }
   .skill__icon {
     font-size: 6rem;
     padding-top: 3rem;
@@ -773,7 +775,7 @@ body {
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
   @media only screen and (max-width: 25em) {
     .section-skills {
-      height: 2500vh;
+      height: 250vh;
       padding-top: 10rem; } }
 
 .section-work {

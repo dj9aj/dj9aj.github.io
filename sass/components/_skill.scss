@@ -31,6 +31,7 @@
     
     @media only screen and (max-width: $bp-smaller) {
         height: min-content;
+        padding-bottom: 3rem;
     }
 
     &:nth-child(odd) {
@@ -38,6 +39,7 @@
         
         @media only screen and (max-width: $bp-smaller) {
             height: min-content;
+            padding-bottom: 3rem;
         }
     }
 
