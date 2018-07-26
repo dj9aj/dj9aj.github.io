@@ -524,8 +524,14 @@ body {
   transition: transform .3s;
   backface-visibility: hidden;
   opacity: 0; }
+  @media only screen and (max-width: 25em) {
+    .skill {
+      height: 40rem; } }
   .skill:nth-child(odd) {
     height: 40rem; }
+    @media only screen and (max-width: 25em) {
+      .skill:nth-child(odd) {
+        height: 30rem; } }
   .skill__icon {
     font-size: 6rem;
     padding-top: 3rem;

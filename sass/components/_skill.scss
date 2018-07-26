@@ -27,10 +27,18 @@
     box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
     border-radius: 2px;
     padding: 0 2vw;
-    transition: transform .3s; 
+    transition: transform .3s;
+    
+    @media only screen and (max-width: $bp-smaller) {
+        height: 40rem;
+    }
 
     &:nth-child(odd) {
-        height: 40rem;   
+        height: 40rem;
+        
+        @media only screen and (max-width: $bp-smaller) {
+            height: 30rem;
+        }
     }
 
     backface-visibility: hidden;
