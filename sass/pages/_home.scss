@@ -63,6 +63,8 @@
 
     @media only screen and (max-width: $bp-smaller) {
         height: 280vh;
+        margin-top: 0;
+        padding: 5rem 0;
         background-image: linear-gradient(
         to right bottom,
         rgba($color-primary, 1),
