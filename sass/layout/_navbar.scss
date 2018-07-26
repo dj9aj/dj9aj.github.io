@@ -146,6 +146,9 @@
     @media only screen and (max-width: $bp-medium) {
         display: flex;
         height: 6rem;
+
+        animation: fadeIn .3s ease-out .8s;
+        animation-fill-mode: backwards;
     }
 }
 
