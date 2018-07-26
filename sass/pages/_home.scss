@@ -30,7 +30,7 @@
 
 .section-skills {
 
-    height: 110vh;
+    height: 120vh;
     padding: 20rem 0;
     z-index: 10;
     margin-top: -17rem;
@@ -42,7 +42,7 @@
     background-size: cover;
     background-position: center;
     -webkit-clip-path: polygon(0 7%, 50% 12%, 100% 7%, 100% 105vh, 50vw 100%, 0 105vh);
-    clip-path: polygon(0 7%, 50% 12%, 100% 7%, 100% 105vh, 50vw 100%, 0 105vh);
+    clip-path: polygon(0 5%, 50% 10%, 100% 5%, 100% 95%, 50vw 100%, 0 95%);
 
     @media only screen and (max-width: $bp-largest) {
         height: 90vh;

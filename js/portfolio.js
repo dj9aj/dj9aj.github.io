@@ -52,7 +52,8 @@ window.onscroll = function changeNav(){
     }  
 
     if (window.onscroll) {
-        elements.navBar.classList.remove('fixed');  
+        // elements.navBar.classList.add('fixed-phone');
+        elements.navBar.id = 'navbar-hidden';   
     } 
 }
 
@@ -70,20 +71,43 @@ Array.from(elements.links).forEach(el => {
 var isScrolling;
 
 // Listen for scroll events
+// window.addEventListener('scroll', function ( event ) {
+//     var scrollPosY = window.pageYOffset | document.body.scrollTop;
+// 	// Clear our timeout throughout the scroll
+// 	window.clearTimeout( isScrolling );
+
+// 	// Set a timeout to run after scrolling ends
+// 	isScrolling = setTimeout(function() {
+
+//         if (scrollPosY > 500) {
+//             // Run the callback
+//             console.log( 'Scrolling has stopped.' );
+//             elements.navBar.classList.remove('fixed-phone');  
+//         }
+		
+
+// 	}, 66);
+
+// }, false);
+
+
+
+// Setup isScrolling variable
+var isScrolling;
+
+// Listen for scroll events
 window.addEventListener('scroll', function ( event ) {
-    var scrollPosY = window.pageYOffset | document.body.scrollTop;
+
 	// Clear our timeout throughout the scroll
 	window.clearTimeout( isScrolling );
 
 	// Set a timeout to run after scrolling ends
 	isScrolling = setTimeout(function() {
 
-        if (scrollPosY > 500) {
-            // Run the callback
-            console.log( 'Scrolling has stopped.' );
-            elements.navBar.classList.add('fixed');
-        }
-		
+		// Run the callback
+        console.log( 'Scrolling has stopped.' );
+        elements.navBar.classList.remove('fixed-phone');
+        elements.navBar.id = 'navbar-fixed'; 
 
 	}, 66);
 
