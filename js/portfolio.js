@@ -83,7 +83,7 @@ document.addEventListener('scroll', function ( event ) {
 		// Run the callback
         console.log( 'Scrolling has stopped.' );
         // elements.navBar.classList.remove('fixed-phone');
-        elements.navBar.id = 'navbar-fixed'; 
+        elements.navBar.id = 'navbar-fixed';
 
 	}, 66);
 
