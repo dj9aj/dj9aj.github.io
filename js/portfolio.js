@@ -58,45 +58,21 @@ window.onscroll = function changeNav(){
 }
 
 
-const toggle = document.getElementById('toggle');
 
 // Remove navbar dropdown if hamburger is not checked
 Array.from(elements.links).forEach(el => {
     el.addEventListener('click', e => {
         toggle.checked = false;
+        
     })
 })
 
-// Setup isScrolling variable
-var isScrolling;
-
-// Listen for scroll events
-// window.addEventListener('scroll', function ( event ) {
-//     var scrollPosY = window.pageYOffset | document.body.scrollTop;
-// 	// Clear our timeout throughout the scroll
-// 	window.clearTimeout( isScrolling );
-
-// 	// Set a timeout to run after scrolling ends
-// 	isScrolling = setTimeout(function() {
-
-//         if (scrollPosY > 500) {
-//             // Run the callback
-//             console.log( 'Scrolling has stopped.' );
-//             elements.navBar.classList.remove('fixed-phone');  
-//         }
-		
-
-// 	}, 66);
-
-// }, false);
-
-
 
 // Setup isScrolling variable
 var isScrolling;
 
 // Listen for scroll events
-window.addEventListener('scroll', function ( event ) {
+document.addEventListener('scroll', function ( event ) {
 
 	// Clear our timeout throughout the scroll
 	window.clearTimeout( isScrolling );
@@ -112,3 +88,4 @@ window.addEventListener('scroll', function ( event ) {
 	}, 66);
 
 }, false);
+
