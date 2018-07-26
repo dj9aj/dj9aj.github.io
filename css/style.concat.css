@@ -119,7 +119,8 @@ body {
   font-weight: 400;
   line-height: 1.7;
   color: #E9E4DE;
-  background-color: #333; }
+  background-color: #333;
+  width: 100%; }
 
 .heading-primary {
   color: #E9E4DE;
@@ -611,7 +612,7 @@ body {
       grid-template-columns: 65vw;
       grid-row-gap: 3rem;
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-      height: 100vh; } }
+      height: 120vh; } }
   @media only screen and (max-width: 22em) {
     .header {
       padding: 20rem 0;
