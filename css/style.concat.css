@@ -485,9 +485,6 @@ body {
   .project__content {
     grid-column: 2 / 2;
     padding: 5rem 6vw; }
-    @media only screen and (max-width: 25em) {
-      .project__content {
-        width: 90%; } }
   .project__text {
     font-size: 1.4rem;
     color: #616161; }
@@ -780,7 +777,8 @@ body {
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
   @media only screen and (max-width: 25em) {
     .section-skills {
-      height: 250vh; } }
+      height: 250vh;
+      background-image: linear-gradient(to right bottom, #445373, #333333); } }
 
 .section-work {
   background-color: #eee;

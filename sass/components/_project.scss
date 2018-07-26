@@ -118,10 +118,6 @@
     &__content {
         grid-column: 2 / 2;
         padding: 5rem 6vw;
-
-        @media only screen and (max-width: $bp-smaller) {
-            width: 90%;
-        }
     }
 
     &__text {
