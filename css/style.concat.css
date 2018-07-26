@@ -416,10 +416,9 @@ body {
       padding-top: 2vh;
       padding: 0 1rem;
       grid-column-gap: 2rem; } }
-  @media only screen and (max-width: 22em) {
+  @media only screen and (max-width: 25em) {
     .project {
-      height: min-content;
-      align-items: center; } }
+      height: min-content; } }
   .project:not(:last-child) {
     margin-bottom: 10rem; }
   .project__pictures {
@@ -486,9 +485,15 @@ body {
   .project__content {
     grid-column: 2 / 2;
     padding: 5rem 6vw; }
+    @media only screen and (max-width: 25em) {
+      .project__content {
+        width: 90%; } }
   .project__text {
     font-size: 1.4rem;
     color: #616161; }
+    @media only screen and (max-width: 25em) {
+      .project__text {
+        font-size: 1.6rem; } }
 
 .work-heading,
 .work-hr {
