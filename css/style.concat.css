@@ -274,13 +274,13 @@ body {
     height: 100%;
     border-radius: 2px; }
   .about__text {
-    width: 35rem;
     grid-area: text;
     color: #616161;
     font-size: 1.4rem; }
     @media only screen and (max-width: 50em) {
       .about__text {
         grid-row: 2 / -1;
+        width: 80%;
         margin: 0 auto;
         font-size: 1.6rem; } }
     .about__text p {
@@ -737,7 +737,7 @@ body {
       height: 150vh; } }
   @media only screen and (max-width: 25em) {
     .section-about {
-      height: 250vh; } }
+      height: 220vh; } }
 
 .section-skills {
   height: 110vh;
