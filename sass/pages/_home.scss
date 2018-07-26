@@ -19,13 +19,13 @@
     }
 
     @media only screen and (max-width: $bp-smaller) {
-        height: 200vh;
+        height: 180vh;
         
     }
 
-    // @media only screen and (max-width: $bp-smallest) {
-    //     height: 170vh;
-    // }
+    @media only screen and (max-width: $bp-smallest) {
+        height: 190vh;
+    }
 }
 
 .section-skills {
@@ -62,7 +62,7 @@
     }
 
     @media only screen and (max-width: $bp-smaller) {
-        height: 260vh;
+        height: 200vh;
         margin-top: 0;
         padding: 5rem 0;
         background-image: linear-gradient(
@@ -71,11 +71,9 @@
         rgba($color-grey-dark-3, 1));
     }
 
-    // @media only screen and (max-width: $bp-smallest) {
-    //     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    //     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    //     height: 220vh;
-    // }
+    @media only screen and (max-width: $bp-smallest) {
+        height: 260vh;
+    }
 }
 
 .section-work {
@@ -104,14 +102,14 @@
     }
 
     @media only screen and (max-width: $bp-smaller) {
-        height: 550vh;
+        height: 500vh;
         margin-top: 0;
         padding: 10rem 0;
     }
     
-    // @media only screen and (max-width: $bp-smallest) {
-    //     height: 460vh;
-    // }
+    @media only screen and (max-width: $bp-smallest) {
+        height: 550vh;
+    }
 }
 
 .section-contact {
