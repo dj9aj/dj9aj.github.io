@@ -136,7 +136,7 @@
     }
 
     @media only screen and (max-width: $bp-smaller) {
-        height: 60rem;
+        height: 50rem;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     } 

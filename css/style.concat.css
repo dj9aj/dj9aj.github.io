@@ -855,6 +855,6 @@ body {
       padding: 10rem 0; } }
   @media only screen and (max-width: 25em) {
     .section-contact {
-      height: 60rem;
+      height: 50rem;
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
