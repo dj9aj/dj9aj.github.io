@@ -12,7 +12,7 @@
     @media only screen and (max-width: $bp-medium) {
         margin: 0;
         background-color: $color-grey-dark-3;
-        height: 6rem;
+        height: 7rem;
         flex-direction: column;
         box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
         position: fixed;
@@ -60,10 +60,6 @@
         &:not(:last-child) {
             margin-right: .5rem;
         }
-
-        @media only screen and (max-width: $bp-medium) {
-            border-bottom: 1px solid white;
-        }
     }
 
     &__item::before {
@@ -98,7 +94,7 @@
             margin-bottom: 1rem;
             color: $color-grey-light-2;
             font-weight: 700;
-
+            padding: 0 3rem;
             &:hover {
                 color: $color-secondary;
             }
@@ -145,7 +141,7 @@
 
     @media only screen and (max-width: $bp-medium) {
         display: flex;
-        height: 6rem;
+        height: 7rem;
 
         animation: fadeIn .3s ease-out .3s;
         animation-fill-mode: backwards;

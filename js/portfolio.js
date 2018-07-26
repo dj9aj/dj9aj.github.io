@@ -68,17 +68,16 @@ Array.from(elements.links).forEach(el => {
 })
 
 
-// Setup isScrolling variable
-var isScrolling;
 
 // Listen for scroll events
-document.addEventListener('scroll', function ( event ) {
-
+document.addEventListener('scroll', event => {
+    
+    let isScrolling
 	// Clear our timeout throughout the scroll
 	window.clearTimeout( isScrolling );
 
 	// Set a timeout to run after scrolling ends
-	isScrolling = setTimeout(function() {
+	isScrolling = setTimeout(() => {
 
 		// Run the callback
         console.log( 'Scrolling has stopped.' );
@@ -87,5 +86,4 @@ document.addEventListener('scroll', function ( event ) {
 
 	}, 66);
 
-}, false);
-
+});
