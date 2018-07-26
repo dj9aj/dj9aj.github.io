@@ -757,7 +757,7 @@ body {
   #navbar-fixed {
     display: flex;
     height: 6rem;
-    animation: fadeIn .3s ease-out .8s;
+    animation: fadeIn .3s ease-out .3s;
     animation-fill-mode: backwards; } }
 
 @media only screen and (max-width: 50em) {
