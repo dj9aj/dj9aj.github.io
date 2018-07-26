@@ -531,12 +531,12 @@ body {
   opacity: 0; }
   @media only screen and (max-width: 25em) {
     .skill {
-      height: 40rem; } }
+      height: min-content; } }
   .skill:nth-child(odd) {
     height: 40rem; }
     @media only screen and (max-width: 25em) {
       .skill:nth-child(odd) {
-        height: 30rem; } }
+        height: min-content; } }
   .skill__icon {
     font-size: 6rem;
     padding-top: 3rem;
@@ -773,13 +773,8 @@ body {
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
   @media only screen and (max-width: 25em) {
     .section-skills {
-      height: 210vh;
+      height: 2500vh;
       padding-top: 10rem; } }
-  @media only screen and (max-width: 22em) {
-    .section-skills {
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-      height: 220vh; } }
 
 .section-work {
   background-color: #eee;

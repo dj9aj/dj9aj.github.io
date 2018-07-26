@@ -62,15 +62,15 @@
     }
 
     @media only screen and (max-width: $bp-smaller) {
-        height: 210vh;
+        height: 2500vh;
         padding-top: 10rem;
     }
 
-    @media only screen and (max-width: $bp-smallest) {
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-        height: 220vh;
-    }
+    // @media only screen and (max-width: $bp-smallest) {
+    //     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    //     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    //     height: 220vh;
+    // }
 }
 
 .section-work {

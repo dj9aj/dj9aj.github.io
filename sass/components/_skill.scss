@@ -30,14 +30,14 @@
     transition: transform .3s;
     
     @media only screen and (max-width: $bp-smaller) {
-        height: 40rem;
+        height: min-content;
     }
 
     &:nth-child(odd) {
         height: 40rem;
         
         @media only screen and (max-width: $bp-smaller) {
-            height: 30rem;
+            height: min-content;
         }
     }
 
