@@ -281,7 +281,6 @@ body {
     @media only screen and (max-width: 50em) {
       .about__text {
         grid-row: 2 / -1;
-        width: 75%;
         margin: 0 auto;
         font-size: 1.6rem; } }
     .about__text p {
@@ -738,7 +737,7 @@ body {
       height: 150vh; } }
   @media only screen and (max-width: 25em) {
     .section-about {
-      height: 200vh; } }
+      height: 250vh; } }
 
 .section-skills {
   height: 110vh;
