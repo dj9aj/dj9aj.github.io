@@ -76,7 +76,7 @@ document.addEventListener('scroll', event => {
 	// Clear our timeout throughout the scroll
 	window.clearTimeout( isScrolling );
 
-	// Set a timeout to run after scrolling ends
+	// Set a timeout to run after scrolling ends.
 	isScrolling = setTimeout(() => {
 
 		// Run the callback
