@@ -278,7 +278,6 @@ body {
         margin: 0 auto; } }
     @media only screen and (max-width: 25em) {
       .about__text {
-        width: 35rem;
         font-size: 1.6rem; } }
     .about__text p {
       margin-bottom: 1rem; }
