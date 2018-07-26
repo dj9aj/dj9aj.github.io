@@ -19,13 +19,13 @@
     }
 
     @media only screen and (max-width: $bp-smaller) {
-        height: 160vh;
+        height: 200vh;
         
     }
 
-    @media only screen and (max-width: $bp-smallest) {
-        height: 170vh;
-    }
+    // @media only screen and (max-width: $bp-smallest) {
+    //     height: 170vh;
+    // }
 }
 
 .section-skills {

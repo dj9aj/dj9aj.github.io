@@ -282,7 +282,8 @@ body {
       .about__text {
         grid-row: 2 / -1;
         width: 75%;
-        margin: 0 auto; } }
+        margin: 0 auto;
+        font-size: 1.6rem; } }
     .about__text p {
       margin-bottom: 1rem; }
       @media only screen and (max-width: 50em) {
@@ -737,10 +738,7 @@ body {
       height: 150vh; } }
   @media only screen and (max-width: 25em) {
     .section-about {
-      height: 160vh; } }
-  @media only screen and (max-width: 22em) {
-    .section-about {
-      height: 170vh; } }
+      height: 200vh; } }
 
 .section-skills {
   height: 110vh;
