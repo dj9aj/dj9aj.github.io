@@ -273,13 +273,14 @@ body {
     height: 100%;
     border-radius: 2px; }
   .about__text {
+    width: 35rem;
     grid-area: text;
     color: #616161;
     font-size: 1.4rem; }
     @media only screen and (max-width: 50em) {
       .about__text {
         grid-row: 2 / -1;
-        width: 85%;
+        width: 90%;
         margin: 0 auto; } }
     @media only screen and (max-width: 25em) {
       .about__text {
@@ -517,7 +518,7 @@ body {
     .skills {
       grid-template-columns: 1fr;
       grid-template-rows: repeat(3, min-content);
-      width: 60%; } }
+      width: 80%; } }
 
 .skill {
   height: 48rem;

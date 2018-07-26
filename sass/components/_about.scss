@@ -67,14 +67,14 @@
     }
 
     &__text {
-        // width: 35rem;
+        width: 35rem;
         grid-area: text;
         color: $color-grey-light-5;
         font-size: 1.4rem;
 
         @media only screen and (max-width: $bp-medium) {
             grid-row: 2 / -1;
-            width: 85%;
+            width: 90%;
             margin: 0 auto;
             
         }
