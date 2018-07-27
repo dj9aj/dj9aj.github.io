@@ -89,7 +89,7 @@
             grid-row: 2 / -1;
             width: 40rem;
             margin: 0 auto;
-            // padding: 0 3rem;
+            padding: 0 2rem;
             
         }
 
@@ -103,7 +103,7 @@
             margin-bottom: 1rem;
 
             @media only screen and (max-width: $bp-medium) {
-                margin-bottom: 3vh;
+                margin-bottom: 3rem;
             }
         }
         

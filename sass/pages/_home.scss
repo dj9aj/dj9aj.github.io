@@ -2,9 +2,9 @@
 
     background-color: $color-grey-light-2;
     // height: 120vh;
-    margin-top: -5rem;
-    padding: 10rem 0;
-    padding-bottom: 25rem;
+    margin-top: -12rem;
+    padding: 15rem 0;
+    padding-bottom: 20rem;
 
     // @media only screen and (max-width: $bp-largest) {
     //     // height: 110vh;
@@ -18,10 +18,12 @@
     //     // height: 150vh;
     // }
 
-    // @media only screen and (max-width: $bp-smaller) {
-    //     // height: 180vh;
+    @media only screen and (max-width: $bp-smaller) {
+        padding-bottom: 10rem;
+        margin-top: -5rem;
+
         
-    // }
+    }
 
     // @media only screen and (max-width: $bp-smallest) {
     //     // height: 190vh;
