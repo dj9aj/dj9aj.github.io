@@ -74,7 +74,7 @@ const removeNav = () => {
     })
 
     // Detect all clicks on the document
-    window.addEventListener("click", function(event) {
+    window.addEventListener("click tap", function(event) {
         // If user clicks inside the nav, do nothing
         if (event.target.closest('.navbar')) return;
 
