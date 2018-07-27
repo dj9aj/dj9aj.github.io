@@ -98,9 +98,6 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box; }
-  @media only screen and (min-width: 75em) {
-    html {
-      font-size: 70%; } }
   @media only screen and (max-width: 75em) {
     html {
       font-size: 50%; } }
@@ -123,10 +120,10 @@ body {
   color: #E9E4DE;
   backface-visibility: hidden;
   font-size: 5rem;
-  font-weight: 400;
-  letter-spacing: .2rem;
+  font-weight: 500;
+  letter-spacing: .4rem;
   animation: moveInLeft .8s ease-out;
-  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4), 0px 6px 11px rgba(255, 133, 128, 0.1), 0px 12px 18px rgba(255, 133, 128, 0.1); }
+  text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.4), 0px 7px 12px rgba(255, 133, 128, 0.1), 0px 13px 19px rgba(255, 133, 128, 0.1); }
   @media only screen and (max-width: 25em) {
     .heading-primary {
       font-size: 4rem; } }
@@ -171,7 +168,7 @@ body {
 #jack {
   font-weight: 500;
   color: #ff8580;
-  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4), 0px 6px 11px rgba(255, 133, 128, 0.1), 0px 12px 18px rgba(255, 133, 128, 0.1); }
+  text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.4), 0px 7px 12px rgba(255, 133, 128, 0.1), 0px 13px 19px rgba(255, 133, 128, 0.1); }
 
 .u-center-text {
   text-align: center !important; }
@@ -235,30 +232,26 @@ body {
 
 .about {
   display: grid;
-  grid-template-rows: 40vh;
+  grid-template-rows: 30rem;
   grid-template-columns: min-content min-content min-content;
   grid-template-areas: "pic hr text";
   grid-gap: 2rem;
   justify-content: center;
-  width: 75%;
   margin: 0 auto; }
-  @media only screen and (min-width: 112.5em) {
+  @media only screen and (max-width: 75em) {
     .about {
-      grid-template-rows: 35vh;
       width: 80%; } }
   @media only screen and (max-width: 50em) {
     .about {
       grid-row-gap: 7vh;
       grid-template-rows: min-content min-content 1fr;
-      grid-template-columns: 1fr;
-      grid-template-areas: "pic" "text" "vr"; } }
+      grid-template-columns: 1fr; } }
   @media only screen and (max-width: 25em) {
     .about {
       padding: 0;
       grid-template-rows: min-content min-content min-content; } }
   .about__picture {
-    grid-area: pic;
-    width: 35rem;
+    width: 34rem;
     height: 100%;
     filter: contrast(80%);
     box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1);
@@ -279,9 +272,13 @@ body {
     border-radius: 2px; }
   .about__text {
     width: 35rem;
-    grid-area: text;
     color: #616161;
     font-size: 1.4rem; }
+    .about__text a:not(:last-child) {
+      margin-right: 3rem; }
+      @media only screen and (max-width: 25em) {
+        .about__text a:not(:last-child) {
+          margin-right: 1rem; } }
     @media only screen and (max-width: 50em) {
       .about__text {
         grid-row: 2 / -1;
@@ -297,13 +294,11 @@ body {
           margin-bottom: 3vh; } }
   .about__vr {
     height: 30rem;
-    grid-area: hr;
     margin: 0 2rem;
     width: 3px;
     background-color: #445373; }
     @media only screen and (max-width: 50em) {
       .about__vr {
-        grid-area: vr;
         visibility: hidden;
         width: 0;
         height: 0;
@@ -407,21 +402,23 @@ body {
   display: grid;
   grid-column-gap: 3rem;
   grid-template-columns: repeat(2, 1fr);
-  height: 70vh;
+  height: min-content;
   width: 80%;
   margin: 0 auto;
   background-color: #fff;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-  padding: 0 5rem;
+  padding: 5rem;
   transition: all .2s;
   outline-offset: 2rem; }
+  @media only screen and (max-width: 75em) {
+    .project {
+      height: vh; } }
   @media only screen and (max-width: 62.5em) {
     .project {
       grid-template-columns: .8fr 1.2fr;
       padding-top: 2vh;
       padding: 0 1rem;
-      grid-column-gap: 2rem;
-      height: 50vh; } }
+      grid-column-gap: 2rem; } }
   @media only screen and (max-width: 50em) {
     .project {
       grid-template-columns: min-content;
@@ -430,9 +427,6 @@ body {
       padding-top: 2vh;
       padding: 0 1rem;
       grid-column-gap: 2rem; } }
-  @media only screen and (max-width: 25em) {
-    .project {
-      height: min-content; } }
   .project:not(:last-child) {
     margin-bottom: 10rem; }
   .project__pictures {
@@ -555,24 +549,15 @@ body {
       width: 80%; } }
 
 .skill {
-  height: 48rem;
   background-color: rgba(233, 228, 222, 0.8);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   border-radius: 2px;
   padding: 0 2vw;
   transition: transform .3s;
+  padding-bottom: 5rem;
+  height: min-content;
   backface-visibility: hidden;
   opacity: 0; }
-  @media only screen and (max-width: 25em) {
-    .skill {
-      height: min-content;
-      padding-bottom: 3rem; } }
-  .skill:nth-child(odd) {
-    height: 40rem; }
-    @media only screen and (max-width: 25em) {
-      .skill:nth-child(odd) {
-        height: min-content;
-        padding-bottom: 3rem; } }
   .skill__icon {
     font-size: 6rem;
     padding-top: 3rem;
@@ -606,10 +591,14 @@ body {
 .flipRound {
   animation: flip 0.8s ease-out;
   opacity: 1; }
+  @media only screen and (max-width: 25em) {
+    .flipRound {
+      animation: 0;
+      opacity: 1; } }
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(68, 83, 115, 0.7), rgba(51, 51, 51, 0.9)), url(../img/hero-image-large.jpg);
+  background-image: linear-gradient(to right bottom, rgba(68, 83, 115, 0.6), rgba(51, 51, 51, 0.9)), url(../img/hero-image-medium.jpg);
   background-size: cover;
   background-position: left;
   z-index: 10;
@@ -620,8 +609,7 @@ body {
   grid-row-gap: 5rem;
   justify-content: end;
   padding: 20rem 15vw;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100vh, 50vw 100%, 0 100vh);
-  clip-path: polygon(0 0, 100% 0, 100% 90vh, 50vw 100%, 0 90vh); }
+  clip-path: polygon(0 0, 100% 0, 100% 90vh, 50% 100%, 0 90vh); }
   @media only screen and (max-width: 50em) {
     .header {
       justify-content: center;
@@ -777,106 +765,54 @@ body {
 
 .section-about {
   background-color: #eee;
-  height: 120vh;
-  margin-top: -10rem;
-  padding: 15rem 0;
-  padding-bottom: 20rem; }
-  @media only screen and (max-width: 75em) {
-    .section-about {
-      height: 110vh; } }
-  @media only screen and (max-width: 50em) {
-    .section-about {
-      height: 140vh; } }
-  @media only screen and (max-width: 37.5em) {
-    .section-about {
-      height: 150vh; } }
-  @media only screen and (max-width: 25em) {
-    .section-about {
-      height: 180vh; } }
-  @media only screen and (max-width: 22em) {
-    .section-about {
-      height: 190vh; } }
+  margin-top: -5rem;
+  padding: 10rem 0;
+  padding-bottom: 25rem; }
 
 .section-skills {
-  height: 120vh;
-  padding: 20rem 0;
+  padding: 10rem 0;
   z-index: 10;
-  margin-top: -17rem;
-  background-image: linear-gradient(to right bottom, rgba(68, 83, 115, 0.8), rgba(51, 51, 51, 0.6)), url(../img/laptop-desk-large.jpeg);
+  margin-top: -5rem;
+  background-image: linear-gradient(to right bottom, rgba(68, 83, 115, 0.5), rgba(51, 51, 51, 0.9)), url(../img/laptop-desk-medium.jpeg);
   background-size: cover;
   background-position: center;
-  -webkit-clip-path: polygon(0 7%, 50% 12%, 100% 7%, 100% 105vh, 50vw 100%, 0 105vh);
-  clip-path: polygon(0 5%, 50% 10%, 100% 5%, 100% 95%, 50vw 100%, 0 95%); }
-  @media only screen and (max-width: 75em) {
-    .section-skills {
-      height: 90vh; } }
+  clip-path: polygon(0 0, 50% 5vh, 100% 0, 100% 95%, 50vw 100%, 0 95%); }
   @media only screen and (max-width: 50em) {
-    .section-skills {
-      height: 200vh;
-      -webkit-clip-path: polygon(0 0, 50% 2%, 100% 0, 100% 98%, 50vw 100%, 0 98%);
-      clip-path: polygon(0 0, 50% 2%, 100% 0, 100% 98%, 50vw 100%, 0 98%);
-      margin-top: -12rem;
-      padding: 15rem 0; } }
-  @media only screen and (max-width: 37.5em) {
     .section-skills {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
   @media only screen and (max-width: 25em) {
     .section-skills {
-      height: 230vh;
       margin-top: 0;
       padding: 5rem 0;
       background-image: linear-gradient(to right bottom, #445373, #333333); } }
-  @media only screen and (max-width: 22em) {
-    .section-skills {
-      height: 260vh; } }
 
 .section-work {
   background-color: #eee;
-  height: 470vh;
   margin-top: -5rem;
-  padding: 15rem 0; }
-  @media only screen and (max-width: 75em) {
-    .section-work {
-      height: 450vh; } }
-  @media only screen and (max-width: 62.5em) {
-    .section-work {
-      height: 350vh; } }
-  @media only screen and (max-width: 50em) {
-    .section-work {
-      height: 300vh; } }
+  padding: 10rem 0;
+  padding-bottom: 20rem; }
   @media only screen and (max-width: 37.5em) {
     .section-work {
-      height: 360vh;
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
   @media only screen and (max-width: 25em) {
     .section-work {
-      height: 450vh;
-      margin-top: 0;
-      padding: 10rem 0; } }
-  @media only screen and (max-width: 22em) {
-    .section-work {
-      height: 550vh; } }
+      margin-top: 0; } }
 
 .section-contact {
   background-image: linear-gradient(to right bottom, rgba(68, 83, 115, 0.8), rgba(51, 51, 51, 0.9)), url(../img/mac-keyboard.jpg);
-  height: 50rem;
   margin-top: -8rem;
   background-size: cover;
   background-position: center;
   z-index: 10;
-  padding: 14rem 0;
-  -webkit-clip-path: polygon(0 7%, 50% 12%, 100% 7%, 100% 105vh, 50vw 100%, 0 105vh);
-  clip-path: polygon(0 7%, 50% 12%, 100% 7%, 100% 105vh, 50vw 100%, 0 105vh); }
+  padding: 10rem 0;
+  clip-path: polygon(0 0, 50% 5%, 100% 0, 100% 100%, 0 100%); }
   @media only screen and (max-width: 37.5em) {
     .section-contact {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-      height: 55rem;
-      padding: 10rem 0; } }
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
   @media only screen and (max-width: 25em) {
     .section-contact {
-      height: 50rem;
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }

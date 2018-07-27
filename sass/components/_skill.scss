@@ -22,26 +22,16 @@
 
 .skill {
 
-    height: 48rem;
+    // height: 48rem;
     background-color: rgba($color-tertiary, 0.8);
     box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
     border-radius: 2px;
     padding: 0 2vw;
     transition: transform .3s;
+    padding-bottom: 5rem;
+    height: min-content;
     
-    @media only screen and (max-width: $bp-smaller) {
-        height: min-content;
-        padding-bottom: 3rem;
-    }
 
-    &:nth-child(odd) {
-        height: 40rem;
-        
-        @media only screen and (max-width: $bp-smaller) {
-            height: min-content;
-            padding-bottom: 3rem;
-        }
-    }
 
     backface-visibility: hidden;
     opacity: 0;
@@ -93,4 +83,10 @@
 .flipRound {
     animation: flip 0.8s ease-out;
     opacity: 1;
+
+    // Disable animation for phones
+    @media only screen and (max-width: $bp-smaller) {
+        animation: 0;
+        opacity: 1;
+    }
 }

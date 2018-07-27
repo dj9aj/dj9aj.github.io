@@ -3,9 +3,9 @@
     height: 95vh;
     background-image: linear-gradient(
         to right bottom,
-        rgba($color-primary, 0.7),
+        rgba($color-primary, 0.6),
         rgba($color-grey-dark-3, 0.9)),
-        url(../img/hero-image-large.jpg);
+        url(../img/hero-image-medium.jpg);
     background-size: cover;
     background-position: left;
     z-index: 10;
@@ -17,8 +17,7 @@
     grid-row-gap: 5rem;
     justify-content: end;
     padding: 20rem 15vw;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100vh, 50vw 100%, 0 100vh);
-    clip-path: polygon(0 0, 100% 0, 100% 90vh, 50vw 100%, 0 90vh);
+    clip-path: polygon(0 0, 100% 0, 100% 90vh, 50% 100%, 0 90vh);
 
     @media only screen and (max-width: $bp-medium) {
         justify-content: center;

@@ -46,7 +46,7 @@ window.onscroll = function changeNav(){
         elements.workHr.classList.add('animateFromRight'); 
     }    
     // Start Contact section animation
-    if (scrollPosY > 5200) {
+    if (scrollPosY > 5400) {
         elements.contactHeading.classList.add('animateFromLeft');
         elements.contactHr.classList.add('animateFromRight'); 
     }  

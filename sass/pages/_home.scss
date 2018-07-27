@@ -1,68 +1,67 @@
 .section-about {
 
     background-color: $color-grey-light-2;
-    height: 120vh;
-    margin-top: -10rem;
-    padding: 15rem 0;
-    padding-bottom: 20rem;
+    // height: 120vh;
+    margin-top: -5rem;
+    padding: 10rem 0;
+    padding-bottom: 25rem;
 
-    @media only screen and (max-width: $bp-largest) {
-        height: 110vh;
-    }
+    // @media only screen and (max-width: $bp-largest) {
+    //     // height: 110vh;
+    // }
 
-    @media only screen and (max-width: $bp-medium) {
-        height: 140vh;
-    }
+    // @media only screen and (max-width: $bp-medium) {
+    //     // height: 140vh;
+    // }
 
-    @media only screen and (max-width: $bp-small) {
-        height: 150vh;
-    }
+    // @media only screen and (max-width: $bp-small) {
+    //     // height: 150vh;
+    // }
 
-    @media only screen and (max-width: $bp-smaller) {
-        height: 180vh;
+    // @media only screen and (max-width: $bp-smaller) {
+    //     // height: 180vh;
         
-    }
+    // }
 
-    @media only screen and (max-width: $bp-smallest) {
-        height: 190vh;
-    }
+    // @media only screen and (max-width: $bp-smallest) {
+    //     // height: 190vh;
+    // }
 }
 
 .section-skills {
 
-    height: 120vh;
-    padding: 20rem 0;
+    // height: 120vh;
+    padding: 10rem 0;
     z-index: 10;
-    margin-top: -17rem;
+    margin-top: -5rem;
     background-image: linear-gradient(
         to right bottom,
-        rgba($color-primary, 0.8),
-        rgba($color-grey-dark-3, 0.6)),
-        url(../img/laptop-desk-large.jpeg);
+        rgba($color-primary, 0.5),
+        rgba($color-grey-dark-3, 0.9)),
+        url(../img/laptop-desk-medium.jpeg);
     background-size: cover;
     background-position: center;
-    -webkit-clip-path: polygon(0 7%, 50% 12%, 100% 7%, 100% 105vh, 50vw 100%, 0 105vh);
-    clip-path: polygon(0 5%, 50% 10%, 100% 5%, 100% 95%, 50vw 100%, 0 95%);
+    clip-path: polygon(0 0, 50% 5vh, 100% 0, 100% 95%, 50vw 100%, 0 95%);
 
-    @media only screen and (max-width: $bp-largest) {
-        height: 90vh;
-    }
+    // @media only screen and (max-width: $bp-largest) {
+    //     height: 100vh;
+    // }
+
+    // @media only screen and (max-width: $bp-medium) {
+    //     // height: 200vh;
+    //     -webkit-clip-path: polygon(0 0, 50% 2%, 100% 0, 100% 98%, 50vw 100%, 0 98%);
+    //     clip-path: polygon(0 0, 50% 2%, 100% 0, 100% 98%, 50vw 100%, 0 98%);
+    //     margin-top: -12rem;
+    //     padding: 15rem 0;
+    // }
 
     @media only screen and (max-width: $bp-medium) {
-        height: 200vh;
-        -webkit-clip-path: polygon(0 0, 50% 2%, 100% 0, 100% 98%, 50vw 100%, 0 98%);
-        clip-path: polygon(0 0, 50% 2%, 100% 0, 100% 98%, 50vw 100%, 0 98%);
-        margin-top: -12rem;
-        padding: 15rem 0;
-    }
-
-    @media only screen and (max-width: $bp-small) {
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
 
     @media only screen and (max-width: $bp-smaller) {
-        height: 230vh;
+        // height: 230vh;
         margin-top: 0;
         padding: 5rem 0;
         background-image: linear-gradient(
@@ -71,45 +70,45 @@
         rgba($color-grey-dark-3, 1));
     }
 
-    @media only screen and (max-width: $bp-smallest) {
-        height: 260vh;
-    }
+    // @media only screen and (max-width: $bp-smallest) {
+    //     height: 260vh;
+    // }
 }
 
 .section-work {
 
     background-color: $color-grey-light-2;
-    height: 470vh;
+    // height: 470vh;
     margin-top: -5rem;
-    padding: 15rem 0;
+    padding: 10rem 0;
+    padding-bottom: 20rem;
 
-    @media only screen and (max-width: $bp-largest) {
-        height: 450vh;
-    }
+    // @media only screen and (max-width: $bp-largest) {
+    //     height: 450vh;
+    // }
 
-    @media only screen and (max-width: $bp-large) {
-        height: 350vh;
-    }
+    // @media only screen and (max-width: $bp-large) {
+    //     height: 350vh;
+    // }
 
-    @media only screen and (max-width: $bp-medium) {
-        height: 300vh;
-    }
+    // @media only screen and (max-width: $bp-medium) {
+    //     height: 300vh;
+    // }
 
     @media only screen and (max-width: $bp-small) {
-        height: 360vh;
+        // height: 360vh;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
 
     @media only screen and (max-width: $bp-smaller) {
-        height: 450vh;
+        // height: 450vh;
         margin-top: 0;
-        padding: 10rem 0;
     }
     
-    @media only screen and (max-width: $bp-smallest) {
-        height: 550vh;
-    }
+    // @media only screen and (max-width: $bp-smallest) {
+    //     height: 550vh;
+    // }
 }
 
 .section-contact {
@@ -119,24 +118,22 @@
         rgba($color-primary, 0.8),
         rgba($color-grey-dark-3, 0.9)),
         url(../img/mac-keyboard.jpg);
-    height: 50rem;
+    // height: 50rem;
     margin-top: -8rem;
     background-size: cover;
     background-position: center;
     z-index: 10;
-    padding: 14rem 0;
-    -webkit-clip-path: polygon(0 7%, 50% 12%, 100% 7%, 100% 105vh, 50vw 100%, 0 105vh);
-    clip-path: polygon(0 7%, 50% 12%, 100% 7%, 100% 105vh, 50vw 100%, 0 105vh);
+    padding: 10rem 0;
+    clip-path: polygon(0 0, 50% 5%, 100% 0, 100% 100%, 0 100%);
 
     @media only screen and (max-width: $bp-small) {
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-        height: 55rem;
-        padding: 10rem 0;
+        // height: 55rem;
     }
 
     @media only screen and (max-width: $bp-smaller) {
-        height: 50rem;
+        // height: 50rem;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     } 

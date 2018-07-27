@@ -1,25 +1,29 @@
 .about {
 
     display: grid;
-    grid-template-rows: 40vh;
+    grid-template-rows: 30rem;
     grid-template-columns: min-content min-content min-content;
     grid-template-areas: "pic hr text";
     grid-gap: 2rem;
     justify-content: center;
-    width: 75%;
     margin: 0 auto;
 
-    @media only screen and (min-width: $bp-big-desktop) {
-        grid-template-rows: 35vh;
-        width: 80%;
+    // @media only screen and (min-width: $bp-big-desktop) {
+    //     // grid-template-rows: 35vh;
+    //     width: 80%;
+    // }
+
+    @media only screen and (max-width: $bp-largest) {
+        width: 80%
     }
+
     @media only screen and (max-width: $bp-medium) {
         grid-row-gap: 7vh;
         grid-template-rows: min-content min-content 1fr;
         grid-template-columns: 1fr;
-        grid-template-areas: "pic"
-                             "text"
-                             "vr";
+        // grid-template-areas: "pic"
+        //                      "text"
+        //                      "vr";
     }
 
     @media only screen and (max-width: $bp-smaller) {
@@ -28,12 +32,14 @@
     }
 
     &__picture {
-        grid-area: pic;
-        width: 35rem;
+        // grid-area: pic;
+        width: 34rem;
+        // margin-right: .5rem;
         height: 100%;
         filter: contrast(80%);
         box-shadow: 0 2rem 5rem rgba($color-black, 0.1);
         overflow: hidden;
+        // margin-bottom: 5rem;
 
         @media only screen and (max-width: $bp-medium) {
             grid-row: 1 / 2;
@@ -72,9 +78,19 @@
 
     &__text {
         width: 35rem;
-        grid-area: text;
+        // grid-area: text;
         color: $color-grey-light-5;
         font-size: 1.4rem;
+
+        & a:not(:last-child) {
+            margin-right: 3rem;
+
+            @media only screen and (max-width: $bp-smaller) {
+                margin-right: 1rem;
+                
+            }
+
+        } 
 
         @media only screen and (max-width: $bp-medium) {
             grid-row: 2 / -1;
@@ -103,13 +119,13 @@
 
     &__vr {
         height: 30rem;
-        grid-area: hr;
+        // grid-area: hr;
         margin: 0 2rem;
         width: 3px;
         background-color: $color-primary;
 
         @media only screen and (max-width: $bp-medium) {
-            grid-area: vr;
+            // grid-area: vr;
             visibility: hidden;
             width: 0;
             height: 0;
