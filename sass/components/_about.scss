@@ -27,7 +27,7 @@
     }
 
     @media only screen and (max-width: $bp-smaller) {
-       padding: 0;
+       padding: 0 3rem;
        grid-template-rows: min-content min-content min-content;
     }
 
