@@ -27,7 +27,7 @@
     }
 
     @media only screen and (max-width: $bp-smaller) {
-       padding: 0 3rem;
+       padding: 0;
        grid-template-rows: min-content min-content min-content;
     }
 
@@ -49,14 +49,14 @@
             // padding: 0 3rem;
         }
 
-        // @media only screen and (max-width: $bp-smaller) {
-        //     grid-row: 1 / 2;
-        //     // width: 40rem;
-        //     // max-height: 100%;
-        //     // max-width: 40rem;
-        //     // max-height: 100%;
-        //     margin: 0 auto; 
-        // }
+        @media only screen and (max-width: $bp-smaller) {
+            grid-row: 1 / 2;
+            width: 35rem;
+            // max-height: 100%;
+            // max-width: 40rem;
+            // max-height: 100%;
+            margin: 0 auto; 
+        }
 
         // @media only screen and (max-width: $bp-smallest) {
         //     grid-row: 1 / 2;
@@ -94,7 +94,7 @@
         }
 
         @media only screen and (max-width: $bp-smaller) {
-            // width: 35rem;
+            width: 35rem;
             font-size: 1.6rem;
             
         }

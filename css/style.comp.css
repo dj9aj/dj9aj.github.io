@@ -247,7 +247,7 @@ body {
       grid-template-columns: 1fr; } }
   @media only screen and (max-width: 25em) {
     .about {
-      padding: 0 3rem;
+      padding: 0;
       grid-template-rows: min-content min-content min-content; } }
   .about__picture {
     width: 34rem;
@@ -259,6 +259,11 @@ body {
       .about__picture {
         grid-row: 1 / 2;
         width: 40rem;
+        margin: 0 auto; } }
+    @media only screen and (max-width: 25em) {
+      .about__picture {
+        grid-row: 1 / 2;
+        width: 35rem;
         margin: 0 auto; } }
   .about__img {
     width: 100%;
@@ -275,6 +280,7 @@ body {
         margin: 0 auto; } }
     @media only screen and (max-width: 25em) {
       .about__text {
+        width: 35rem;
         font-size: 1.6rem; } }
     .about__text p {
       margin-bottom: 1rem; }
