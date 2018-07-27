@@ -57,8 +57,6 @@ window.onscroll = function changeNav(){
     } 
 }
 
-
-
 // Remove navbar dropdown if hamburger is not checked
 Array.from(elements.links).forEach(el => {
     el.addEventListener('click', e => {
@@ -67,8 +65,6 @@ Array.from(elements.links).forEach(el => {
     })
 })
 
-
-
 // Listen for scroll events
 document.addEventListener('scroll', event => {
     
@@ -76,14 +72,11 @@ document.addEventListener('scroll', event => {
 	// Clear our timeout throughout the scroll
 	window.clearTimeout( isScrolling );
 
-	// Set a timeout to run after scrolling ends.
+	// Set a timeout to run after scrolling ends
 	isScrolling = setTimeout(() => {
-
 		// Run the callback
         console.log( 'Scrolling has stopped.' );
         // elements.navBar.classList.remove('fixed-phone');
         elements.navBar.id = 'navbar-fixed';
-
 	}, 66);
-
 });

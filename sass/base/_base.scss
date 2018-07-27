@@ -8,6 +8,7 @@
 }
 
 // RESPONSIVE BREAKPOINTS
+$bp-big-desktop: 112.5em; 
 $bp-largest: 75em; // 1200px
 $bp-large: 62.5em; // 1000px
 $bp-medium: 50em; // 800px
@@ -18,6 +19,10 @@ $bp-smallest: 22em; // 350px - iPhone 5
 html {
     font-size: 62.5%; // 1 rem = 10px; 10px/16px = 62.5%
     box-sizing: border-box;
+
+    @media only screen and (min-width: $bp-largest) {
+        font-size: 70%;
+    }
 
     @media only screen and (max-width: $bp-largest) {
         font-size: 50%;

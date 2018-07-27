@@ -103,6 +103,9 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box; }
+  @media only screen and (min-width: 75em) {
+    html {
+      font-size: 70%; } }
   @media only screen and (max-width: 75em) {
     html {
       font-size: 50%; } }
@@ -244,6 +247,10 @@ body {
   justify-content: center;
   width: 75%;
   margin: 0 auto; }
+  @media only screen and (min-width: 112.5em) {
+    .about {
+      grid-template-rows: 35vh;
+      width: 80%; } }
   @media only screen and (max-width: 50em) {
     .about {
       grid-row-gap: 7vh;
