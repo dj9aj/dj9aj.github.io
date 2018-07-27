@@ -3,15 +3,9 @@
     display: grid;
     grid-template-rows: 30rem;
     grid-template-columns: min-content min-content min-content;
-    // grid-template-areas: "pic hr text";
     grid-gap: 2rem;
     justify-content: center;
     margin: 0 auto;
-
-    // @media only screen and (min-width: $bp-big-desktop) {
-    //     // grid-template-rows: 35vh;
-    //     width: 80%;
-    // }
 
     @media only screen and (max-width: $bp-largest) {
         width: 80%
@@ -19,84 +13,49 @@
 
     @media only screen and (max-width: $bp-medium) {
         grid-row-gap: 5rem;
-        grid-template-rows: min-content min-content min-content;
+        grid-template-rows: repeat(3, min-content);
         grid-template-columns: 1fr;
-        // grid-template-areas: "pic"
-        //                      "text"
-        //                      "vr";
-    }
-
-    @media only screen and (max-width: $bp-smaller) {
-       padding: 0;
-       grid-template-rows: min-content min-content min-content;
     }
 
     &__picture {
-        // grid-area: pic;
         width: 34rem;
-        // margin-right: .5rem;
         height: 100%;
         filter: contrast(80%);
         box-shadow: 0 2rem 5rem rgba($color-black, 0.1);
         overflow: hidden;
-        // margin-bottom: 5rem;
 
         @media only screen and (max-width: $bp-medium) {
             grid-row: 1 / 2;
             width: 40rem;
-            // height: 35vh;
-            margin: 0 auto; 
-            // padding: 0 3rem;
+            margin: 0 auto;
         }
 
         @media only screen and (max-width: $bp-smaller) {
-            grid-row: 1 / 2;
             width: 35rem;
-            // max-height: 100%;
-            // max-width: 40rem;
-            // max-height: 100%;
-            margin: 0 auto; 
         }
-
-        // @media only screen and (max-width: $bp-smallest) {
-        //     grid-row: 1 / 2;
-        //     // max-width: 30rem;
-        //     // max-height: 100%;
-        //     // margin: 0 auto;
-        // }
     }
     
     &__img {
         width: 100%;
         height: 100%;
         border-radius: 2px;
-
-        // @media only screen and (max-width: $bp-medium) {
-        //     width: 100%;
-        //     height: 100%;
-        // }
     }
 
     &__text {
         width: 35rem;
-        // grid-area: text;
         color: $color-grey-light-5;
         font-size: 1.4rem;
-
-         
 
         @media only screen and (max-width: $bp-medium) {
             grid-row: 2 / -1;
             width: 40rem;
             margin: 0 auto;
             padding: 0 2rem;
-            
         }
 
         @media only screen and (max-width: $bp-smaller) {
             width: 35rem;
             font-size: 1.6rem;
-            
         }
 
         & p {
@@ -105,21 +64,16 @@
             @media only screen and (max-width: $bp-medium) {
                 margin-bottom: 3rem;
             }
-        }
-        
+        } 
     }
-
-    
 
     &__vr {
         height: 30rem;
-        // grid-area: hr;
         margin: 0 2rem;
         width: 3px;
         background-color: $color-primary;
 
         @media only screen and (max-width: $bp-medium) {
-            // grid-area: vr;
             visibility: hidden;
             width: 0;
             height: 0;
@@ -143,139 +97,3 @@
     animation: moveInFarRight 0.5s ease-out;
     opacity: 1;
 }
-
-
-
-// 
-
-
-
-
-
-
-
-
-
-
-// .about {
-
-//     display: grid;
-//     grid-template-rows: min-content;
-//     grid-template-columns: "min-content min-content min-content";
-//     grid-template-areas: "pic hr text";
-//     grid-gap: 2rem;
-//     justify-content: center;
-//     width: 50%;
-//     margin: 0 auto;
-
-//     @media only screen and (max-width: $bp-medium) {
-//         width: 75%;
-//         grid-row-gap: 7vh;
-//         grid-template-rows: min-content min-content min-content;
-//         grid-template-columns: 1fr;
-//         grid-template-areas: "pic"
-//                              "text"
-//                              "vr";
-//     }
-
-//     @media only screen and (max-width: $bp-smallest) {
-//        padding: 0 20rem;
-//        width: 100%;
-//        grid-template-rows: minmax(min-content, max-content) min-content min-content;
-//     }
-
-//     &__picture {
-//         grid-area: pic;
-//         width: 34rem;
-//         height: 30rem;
-//         filter: contrast(80%);
-//         box-shadow: 0 2rem 5rem rgba($color-black, 0.1);
-//         overflow: hidden;
-
-//         @media only screen and (max-width: $bp-medium) {
-//             grid-row: 1 / 2;
-//             width: 40rem;
-//             height: 35vh;
-//             margin: 0 auto; 
-//         }
-
-//         @media only screen and (max-width: $bp-smaller) {
-//             grid-row: 1 / 2;
-//             max-width: 90%;
-//             max-height: 100%;
-//             margin: 0 auto; 
-//         }
-
-//         @media only screen and (max-width: $bp-smallest) {
-//             grid-row: 1 / 2;
-//             max-width: 85%;
-//             max-height: 100%;
-//             margin: 0 auto;
-//         }
-//     }     
-
-//     &__text {
-//         width: 35rem;
-//         grid-area: text;
-//         color: $color-grey-light-5;
-//         font-size: 1.4rem;
-
-//         @media only screen and (max-width: $bp-medium) {
-//             grid-row: 2 / -1;
-//             width: 75%;
-//             margin: 0 auto;
-//         }
-
-//         & p {
-//             margin-bottom: 1rem;
-
-//             @media only screen and (max-width: $bp-medium) {
-//                 margin-bottom: 3vh;
-//             }
-//         }
-        
-//     }
-
-//     &__img {
-//         width: 100%;
-//         max-height: 100%;
-//         border-radius: 2px;
-
-//         @media only screen and (max-width: $bp-medium) {
-//             width: 100%;
-//             height: 100%;
-//         }
-//     }
-
-//     &__vr {
-//         height: 30rem;
-//         grid-area: hr;
-//         margin: 0 2rem;
-//         width: 3px;
-//         background-color: $color-primary;
-
-//         @media only screen and (max-width: $bp-medium) {
-//             grid-area: vr;
-//             visibility: hidden;
-//             width: 0;
-//             height: 0;
-//             opacity: 0;
-//             margin: 0;
-//         }
-//     } 
-// }
-
-// .about-heading,
-// .about-hr {
-//     opacity: 0;
-// }
-
-// .animateFromLeft {
-//     animation: moveInFarLeft 0.5s ease-out;
-//     opacity: 1;
-// }
-
-// .animateFromRight {
-//     animation: moveInFarRight 0.5s ease-out;
-//     opacity: 1;
-// }

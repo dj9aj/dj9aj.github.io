@@ -16,10 +16,7 @@
         flex-direction: column;
         box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
         position: fixed;
-        // display: none;
         animation: 0;
-        // z-index: 999;
-        // justify-content: center;
     }
 
     &__hamburger {
@@ -126,21 +123,12 @@
 
     @media only screen and (max-width: $bp-medium) {
         padding: 0;
-        display: none;
-        
+        display: none;  
     }
 }
 
-// .fixed-phone {
-
-//     display: block;
-
+#navbar-phone-fixed {
     
-// }
-
-#navbar-fixed {
-    
-
     @media only screen and (max-width: $bp-medium) {
         display: flex;
         height: 6rem;
@@ -150,8 +138,7 @@
     }
 }
 
-
-#navbar-hidden {
+#navbar-phone-hidden {
     @media only screen and (max-width: $bp-medium) {
         display: none;
     }

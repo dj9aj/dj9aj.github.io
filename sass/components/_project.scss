@@ -12,28 +12,20 @@
     transition: all .2s;
     outline-offset: 2rem;
 
-    @media only screen and (max-width: $bp-largest) {
-        
-        height: vh;
-    }
-
     @media only screen and (max-width: $bp-large) {
         grid-template-columns: .8fr 1.2fr;
         padding-top: 2vh;
         padding: 0 1rem;
         grid-column-gap: 2rem;
-        // height: 50vh;
     }
 
     @media only screen and (max-width: $bp-medium) {
         grid-template-columns: min-content;
         grid-template-rows: min-content;
-        height: min-content;
         padding-top: 2vh;
         padding: 0 1rem;
         grid-column-gap: 2rem;
     }
-
 
     &:not(:last-child) {
         margin-bottom: 10rem;
@@ -92,7 +84,6 @@
             width: 0;
             height: 0;
         }
-
     }
 
     &__img-landscape--1 {
@@ -106,7 +97,6 @@
             visibility: hidden;
             width: 0;
             height: 0;
-            
         }
     }
 

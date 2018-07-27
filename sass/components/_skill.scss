@@ -1,8 +1,7 @@
 .skills {
 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: min-content;
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 10rem;
     width: 80%;
     margin: 0 auto;
@@ -10,19 +9,11 @@
     @media only screen and (max-width: $bp-medium) {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, min-content); 
-        width: 50%;
-    }
-
-    @media only screen and (max-width: $bp-small) {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, min-content); 
-        width: 80%;
     }
 }
 
 .skill {
 
-    // height: 48rem;
     background-color: rgba($color-tertiary, 0.8);
     box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
     border-radius: 2px;
@@ -30,9 +21,6 @@
     transition: transform .3s;
     padding-bottom: 5rem;
     height: min-content;
-    
-
-
     backface-visibility: hidden;
     opacity: 0;
     

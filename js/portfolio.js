@@ -8,14 +8,26 @@ const elements = {
     skill: document.querySelectorAll('.skill'), 
     skillsHeading: document.querySelector('.skills-heading'),
     skillsHr: document.querySelector('.skills-hr'),
+    toggle: document.getElementById('toggle'),
     workHeading: document.querySelector('.work-heading'),
     workHr: document.querySelector('.work-hr')
 }
 
-const skills = Array.from(elements.skill);
 
-window.onscroll = function changeNav(){
+window.addEventListener('scroll', event => {
+    changeNav();
+    removeNav();  
+});
+
+
+const changeNav = () => {
+    
     const scrollPosY = window.pageYOffset | document.body.scrollTop;
+    const skills = Array.from(elements.skill);
+
+    // Hide phone nav when user scrolls
+    elements.navBar.id = 'navbar-phone-hidden';  
+
     // Start About section animation
     if (scrollPosY > 190) {
         elements.aboutHeading.classList.add('animateFromLeft');
@@ -50,33 +62,33 @@ window.onscroll = function changeNav(){
         elements.contactHeading.classList.add('animateFromLeft');
         elements.contactHr.classList.add('animateFromRight'); 
     }  
-
-    if (window.onscroll) {
-        // elements.navBar.classList.add('fixed-phone');
-        elements.navBar.id = 'navbar-hidden';   
-    } 
 }
 
-// Remove navbar dropdown if hamburger is not checked
-Array.from(elements.links).forEach(el => {
-    el.addEventListener('click', e => {
-        toggle.checked = false;
-        
+
+const removeNav = () => {
+    // Remove navbar dropdown if hamburger is not checked
+    Array.from(elements.links).forEach( el => {
+        el.addEventListener('click', e => {
+            elements.toggle.checked = false;
+        })
     })
-})
 
-// Listen for scroll events
-document.addEventListener('scroll', event => {
-    
+    // Detect all clicks on the document
+    window.addEventListener("click", function(event) {
+        // If user clicks inside the nav, do nothing
+        if (event.target.closest('.navbar')) return;
+
+        // If user clicks outside the nav, hide dropdown
+        elements.toggle.checked = false;
+    });
+
     let isScrolling
-	// Clear our timeout throughout the scroll
-	window.clearTimeout( isScrolling );
+    // Clear our timeout throughout the scroll
+    window.clearTimeout(isScrolling);
 
-	// Set a timeout to run after scrolling ends
-	isScrolling = setTimeout(() => {
-		// Run the callback
-        console.log( 'Scrolling has stopped.' );
-        // elements.navBar.classList.remove('fixed-phone');
-        elements.navBar.id = 'navbar-fixed';
-	}, 66);
-});
+    // Set a timeout to run after scrolling ends
+    isScrolling = setTimeout( () => {
+        // Fix nav to screen when user stops scrolling
+        elements.navBar.id = 'navbar-phone-fixed';
+    }, 66); 
+}
