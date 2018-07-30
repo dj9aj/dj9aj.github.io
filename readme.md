@@ -7,7 +7,7 @@ I have created a portfolio to showcase my skills and projects. To achieve this, 
 
 
 ## BEM methodology 
-I was able keep my code structured, easier to understand and easily scalable
+Structured code that's easy to understand and easily scalable
 
 
 
@@ -17,7 +17,7 @@ Enabled me to break different components down into separate Sass files, with the
 
 
 ## CSS Grid & Flexbox 
-I created fluid layouts throughout the page with a mixture of Grid and Flexbox. The app is also fully responsive on multiple screen widths.
+I created fluid layouts throughout the page with a mixture of Grid and Flexbox. The app is fully responsive on multiple screen widths.
 
 
 
