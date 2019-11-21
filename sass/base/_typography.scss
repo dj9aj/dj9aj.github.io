@@ -43,6 +43,26 @@ body {
     &--light { color: $color-tertiary; }
 }
 
+.heading-quaternary {
+    color: $color-grey-light-5;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 500;
+
+    &--dark { color: $color-grey-light-5; }
+    &--light { color: $color-tertiary; }
+}
+
+.heading-quinary {
+    color: $color-grey-light-5;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 500;
+
+    &--dark { color: $color-grey-light-5; }
+    &--light { color: $color-tertiary; }
+}
+
 .heading-hr {
     width: 70px;
     height: 4px;
