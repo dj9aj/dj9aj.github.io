@@ -14,20 +14,36 @@
         <nav class="navbar" id="navbar">
             <label for="toggle" class="navbar__hamburger">&#9776;</label>
             <input type="checkbox" class="navbar__toggle" id="toggle">
-            <ul class="navbar__list">
-                <li class="navbar__item">
-                    <a href="#section-about" class="navbar__link">About</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#section-skills" class="navbar__link">Skills</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#section-work" class="navbar__link">Work</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#section-contact" class="navbar__link">Contact</a>
-                </li>
-            </ul>
+            <div class="navbar-list-flex">
+                <ul class="navbar__list">
+                    <li class="navbar__item">
+                        <a href="#section-about" class="navbar__link">About</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#section-skills" class="navbar__link">Skills</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#section-work" class="navbar__link">Work</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#section-contact" class="navbar__link">Contact</a>
+                    </li>
+                </ul>
+                <ul class="navbar__list">
+                    <li class="contact__item">
+                        <a href="mailto:jackdo@hotmail.co.uk" class="contact__link"><ion-icon name="mail"></ion-icon></a>
+                    </li>
+                    <li class="contact__item">
+                        <a href="https://github.com/dj9aj" target="_blank" class="contact__link"><ion-icon name="logo-github"></ion-icon></a>
+                    </li>
+                    <li class="contact__item">
+                        <a href="https://www.linkedin.com/in/jack-doyle-068160151/" target="_blank" class="contact__link"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    </li>
+                    <li class="contact__item">
+                        <a href="https://twitter.com/jackdoyle1987" target="_blank" class="contact__link"><ion-icon name="logo-twitter"></ion-icon></a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     
         <header class="header" id="header">
@@ -55,7 +71,7 @@
                 </div>
                 <div class="about__vr"></div>
                 <div class="about__text">
-                    <p class="paragraph">Since turning my passion into a career, I have been writing code that powers websites, web-apps and mobile-apps. If I'm not coding in my day job, I'm at home working on one of my projects, just for fun. Understanding the business aspects of my work, and what makes money, is always at the forefront of my mind. I have a huge thirst to learn new skills, and I strive to continue challenging myself. I'm currently seeking a permanent role within an exciting company with a clear career path. If you would like to find out more about me, then let's grab a coffee and have a chat.</p>  
+                    <p class="paragraph u-margin-bottom-small">Since turning my passion into a career, I have been writing code that powers websites, web-apps and mobile-apps. If I'm not coding in my day job, I'm at home working on one of my projects, just for fun. Understanding the business aspects of my work, and what makes money, is always at the forefront of my mind. I have a huge thirst to learn new skills, and I strive to continue challenging myself. If you would like to find out more about me, then let's grab a coffee and have a chat.</p>  
                     <a href="#section-skills" class="btn-text u-margin-right-medium">My Skills &rarr;</a>         
                     <a href="pdf/jackdoyle-cv.pdf" target="_blank" class="btn-text">Download My C.V &rarr;</a>         
                 </div>
@@ -70,35 +86,39 @@
             <div class="heading-hr skills-hr"></div>
             <div class="skills">
                 <div class="skill">
-                    <h4 class="skill__heading u-margin-top-medium">Frontend</h4>
+                    <div class="u-margin-top-medium u-margin-bottom-small">
+                        <h4 class="skill__heading">Frontend</h4>
+                        <div class="heading-hr--small"></div>
+                    </div>
                     <div class="skill__list">
-                        <li>JavaScript (ES5 and ES6+)</li>
-                        <li>ReactJS</li>
+                        <li>JavaScript and Typescript</li>
+                        <li>ReactJS and React Native</li>
                         <li>Sass and modern CSS technologies such as Flexbox and Grid</li>
-                        <li>Webpack and Babel</li>
                         <li>Mobile Responsive Design</li>
                         <li>Experience working with older browser platforms such as IE11</li>
                     </div>    
                 </div>
                 <div class="skill">
-                    <h4 class="skill__heading u-margin-top-medium">Backend</h4>
+                    <div class="u-margin-top-medium u-margin-bottom-small">
+                        <h4 class="skill__heading">Backend</h4>
+                        <div class="heading-hr--small"></div>
+                    </div>
                     <div class="skill__list">
-                        <li>NodeJS</li>
-                        <li>ExpressJS</li>
-                        <li>Relational databases such as PostreSQL</li>
+                        <li>Node.js</li>
+                        <li>Relational databases such as PostgreSQL</li>
+                        <li>Schema Design</li>
                         <li>No SQL databases such as MongoDB</li>
                     </div>    
                 </div>
                 <div class="skill">
-                    <div class="skill__icon-container">
+                    <div class="u-margin-top-medium u-margin-bottom-small">
+                        <h4 class="skill__heading">Other Skills</h4>
+                        <div class="heading-hr--small"></div>
                     </div>
-                    <h4 class="skill__heading u-margin-top-medium">Other Skills</h4>
                     <div class="skill__list">
-                        <li>React Native for iOS and Android</li>
-                        <li>GraphQL</li>
                         <li>Git (including GitHub)</li>
-                        <li>BEM Methodology</li>
                         <li>Good intuition on UX issues</li>
+                        <li>Experience in Agile team environments</li>
                     </div>    
                 </div>
             </div>
@@ -107,56 +127,38 @@
         <section class="section-work" id="section-work">
             <div class="u-center-text u-margin-top-medium u-margin-bottom-large">
                 <h2 class="heading-secondary heading-secondary--dark work-heading">
-                    My Work Experience
+                    My Work
                 </h2>
                 <div class="heading-hr work-hr"></div>
             </div>
-            <div class="work-experience">
-                <div class="work-experience__description">
+            <div class="project">
+                <div class="project__pictures">
+                    <img src="img/cw_website.png" alt="Circular Wave Website" class="work-experience__img-landscape--1">
+                    <img src="img/cw_web_app.png" alt="Circular Wave Website" class="work-experience__img-landscape--2">
+                </div>
+                <div class="project__content">
                     <h3 class="heading-quaternary heading-quaternary--dark u-center-text">Full Stack Developer - Circular Wave</h3>
-                    <h4 class="heading-quinary heading-quinary--dark u-center-text">September 2018 - present</h3>
-                        <div class="heading-hr--small u-margin-bottom-medium"></div>
-                    <p class="work-experience__text u-margin-bottom-small">
-                        As part of an agile team, we have developed a React web application for NHS trusts to manage their workforce. Admins can share available ad hoc shifts through the web app, and healthcare professionals can apply for work and manage their timesheets through our React Native mobile app. Our backend consists of NodeJS microservices, and we use PostgreSQL and Firebase for our database.
-                    </p>
-                </div>
-                <div class="work-experience__pictures">
-                    <img src="img/circular_wave_app.png" alt="Forkify Screen Shot 1" class="work-experience__img-portrait--3">
-                    <img src="img/circular_wave_web_app.png" alt="Forkify Screen Shot 2" class="work-experience__img-portrait--4"> 
-                </div>
-                <div class="work-experience__content">
-                    <p class="work-experience__text u-margin-bottom-small">My main responsibilities and achievements - </p>
-                    <ul class="skill__list u-margin-bottom-medium">
-                        <li>Develop features appropriate to scale, extensibility, and scope of the problem</li>
-                        <li>Contribute towards a database migration from NoSQL to SQL</li>
-                        <li>Adhere to the DRY principle whilst maintaining a very large codebase on both frontend and backend</li>
-                        <li>Implement technical planning on upcoming development tasks. This is to assess risks and consider how any changes will affect our application</li>
-                        <li>Follow Scrum methodologies, such as regular refinement meetings and two week sprints</li>
-                    </ul>
-                    
+                    <h4 class="heading-quinary heading-quinary--dark u-center-text">September 2018 - present</h4>
+                    <div class="heading-hr--small u-margin-bottom-medium"></div>
+                    <p class="project__text u-margin-bottom-small">We have developed a React web application for NHS trusts to manage their workforce. Healthcare professionals can apply for work and manage their timesheets through our React Native mobile app. The backend consists of Node.js microservices with a PostgreSQL database.</p>
+
                     <p class="work-experience__text u-margin-bottom-small">Technologies and tools include - </p>
-                    <ul class="skill__list u-margin-bottom-medium"">
-                        <li>ReactJS configured by Webpack for our web application. React Native for our mobile app. Redux for state management</li>
-                        <li>NodeJS microservices on the backend serving RESTful APIs</li>
-                        <li>PostgreSQL and Firebase databases</li>
-                        <li>Git/GitHub version control</li>
-                        <li>Jest test suite for unit testing</li>
-                        <li>Jira management tool to track development team work</li>
-                    </ul>
                     <div class="skill__pill-list">
                         <div class="skill__pill-box">#JavaScript</div>
+                        <div class="skill__pill-box">#Typescript</div>
                         <div class="skill__pill-box">#ReactJS</div>
                         <div class="skill__pill-box">#React Native</div>
-                        <div class="skill__pill-box">#NodeJS</div>
-                        <div class="skill__pill-box">#ExpressJS</div>
+                        <div class="skill__pill-box">#Node.js</div>
                         <div class="skill__pill-box">#PostgreSQL</div>
-                        <div class="skill__pill-box">#Firebase</div>
                         <div class="skill__pill-box">#Jest</div>
-                        <div class="skill__pill-box">#CSS3</div>
+                        <div class="skill__pill-box">#Sass</div>
                         <div class="skill__pill-box">#Webpack</div>
                         <div class="skill__pill-box">#Git/GitHub</div>
+                        <div class="skill__pill-box">#Heroku</div>
+                        <div class="skill__pill-box">#Azure Pipelines</div>
                     </div> 
-                </div>    
+   
+                </div>       
             </div>
             <div class="project">
                 <div class="project__pictures">
@@ -167,7 +169,6 @@
                     <h3 class="heading-tertiary heading-tertiary--dark u-center-text">Sick Fits</h3>
                     <div class="heading-hr--small u-margin-bottom-medium"></div>
                     <p class="project__text u-margin-bottom-small">Sick Fits is a fictional online store built with ReactJS and GraphQL. The full stack application is built with a NodeJS backend alongside a GraphQL Yoga server, which handles all of my custom server side logic, such as credit card transactions via Stripe, password reset, permissions management and more. The backend also interfaces with Prisma, which is a powerful ORM library that sits on top of the database. GraphQL has been a buzz lately and I was keen to give it a try. It's essentially an alternative to the way in which REST APIs work. In contrast to hitting an API endpoint, where you just accept the data that's returned to you, GraphQL allows you to write queries on the client side and it gives you the freedom to specify the exact data in the shape that you want returned from the server. I used Jest for testing the key React components and GraphQL queries. Please refer to my GitHub repo for more information about my approach and the technologies used.</p>
-                    <a href="https://sickfits-jack-react-prod.herokuapp.com/" target="_blank" class="btn-text u-margin-right-medium u-margin-top-small">View App &rarr;</a> 
                     <a href="https://github.com/dj9aj/Sick-Fits-Frontend" target="_blank" class="btn-text u-margin-top-small">View Code &rarr;</a> 
                 </div>       
             </div>
@@ -223,13 +224,22 @@
                 <p class="contact__text u-center-text">If you’d like to find out more about me and what I can offer, please get in touch via any of the links below.</p>
                 <h3 class="heading-tertiary heading-tertiary--light u-center-text u-margin-top-medium">Social Links</h3>
                 <ul class="contact__list u-margin-top-small u-margin-bottom-small">
-                    <li class="contact__item"><a href="mailto:jackdo@hotmail.co.uk" class="contact__link fas fa-envelope"></a></li>
-                    <li class="contact__item"><a href="https://github.com/dj9aj" target="_blank" class="contact__link fab fa-github"></a></li>
-                    <li class="contact__item"><a href="https://www.linkedin.com/in/jack-doyle-068160151/" target="_blank" class="contact__link fab fa-linkedin"></a></li>
-                    <li class="contact__item"><a href="https://twitter.com/jackdoyle1987" target="_blank" class="contact__link fab fa-twitter"></a></li>
+                    <li class="contact__item">
+                        <a href="mailto:jackdo@hotmail.co.uk" class="contact__link"><ion-icon name="mail"></ion-icon></a>
+                    </li>
+                    <li class="contact__item">
+                        <a href="https://github.com/dj9aj" target="_blank" class="contact__link"><ion-icon name="logo-github"></ion-icon></a>
+                    </li>
+                    <li class="contact__item">
+                        <a href="https://www.linkedin.com/in/jack-doyle-068160151/" target="_blank" class="contact__link"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    </li>
+                    <li class="contact__item">
+                        <a href="https://twitter.com/jackdoyle1987" target="_blank" class="contact__link"><ion-icon name="logo-twitter"></ion-icon></a>
+                    </li>
                 </ul>
             </div>
         </section> 
         <script src="js/portfolio.js"></script>    
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>    
     </body>
 </html>

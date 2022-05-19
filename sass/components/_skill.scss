@@ -50,7 +50,6 @@
 
     &__heading {
         font-size: 1.6rem;
-        padding-bottom: 2rem;
         color: $color-primary;
     }
 
@@ -60,8 +59,14 @@
         font-size: 1.4rem;
         text-align: left;
 
+
+        & li {
+            padding-bottom: 0.5rem;
+            line-height: 1.4;
+        } 
+
         & li:not(:last-child) {
-            padding-bottom: 1rem;
+            padding-bottom: 0.5rem;
         }  
     }
 
