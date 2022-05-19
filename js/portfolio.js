@@ -25,14 +25,14 @@ const animateElements = () => {
     } 
 
     // Start Skills section animation
-    if(scrollPosY > 800) {
+    if (scrollPosY > 800) {
         elements.skillsHeading.classList.add('animateFromLeft');
         elements.skillsHr.classList.add('animateFromRight');  
     }
     
     // Start skills flip animation
     const skills = Array.from(elements.skill);
-    if(scrollPosY > 1000) {
+    if (scrollPosY > 1000) {
         skills.forEach(skill => {
             skill.classList.add('flipRound'); 
         });
@@ -60,12 +60,12 @@ const changeNav = () => {
     elements.navBar.id = 'navbar-phone-hidden';  
     
     // Remove fixed navbar
-    if(scrollPosY <= 400) {
+    if (scrollPosY <= 400) {
         elements.navBar.classList.remove('fixed'); 
     }
 
     // Add fixed navbar
-    if(scrollPosY > 500) {
+    if (scrollPosY > 500) {
         elements.navBar.classList.add('fixed');
     }      
 }
