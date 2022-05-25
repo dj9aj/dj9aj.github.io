@@ -12,9 +12,8 @@
         background-color: $color-grey-dark-3;
         flex-direction: column;
         box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
-        position: fixed;
         animation: 0;
-        padding: 0.5rem;
+        padding: 0rem;
     }
 
     &__hamburger {
@@ -38,15 +37,18 @@
         list-style: none;
         color: $color-tertiary;
         font-size: 1.8rem;
+        display: flex;
+        flex: 1;
+
+        &:last-child {
+            justify-content: flex-end;
+        }
+    
 
         @media only screen and (max-width: $bp-medium) {
-           display: none;
            width: 100%;
-           height: 60rem;
-           padding: 2rem 0;
-           transform: translateY(-.8rem); 
-           box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
-           background-color: rgba($color-grey-dark-3, 1);
+           flex-direction: column;
+           padding: 0 3rem;
         }
     }
 
@@ -69,7 +71,11 @@
         background-color: $color-secondary;
         transform: scaleX(0);
         transition: transform .2s,
-                    height .4s .2s;           
+                    height .4s .2s;     
+    
+        @media only screen and (max-width: $bp-medium) {
+            height: 0px;
+        }
     }
 
     &__item:hover::before {
@@ -89,21 +95,12 @@
             margin-bottom: 1rem;
             color: $color-grey-light-2;
             font-weight: 700;
-            padding: 0 3rem;
             &:hover {
                 color: $color-secondary;
             }
         }
     }
-}
-
-#toggle:checked + .navbar__list {
-    display: block;
-}   
-
-#toggle:checked + .navbar {
-    height: 50rem;
-}
+} 
 
 .fixed {
     position: fixed;
@@ -127,7 +124,6 @@
     @media only screen and (max-width: $bp-medium) {
         display: flex;
         height: 6rem;
-
         animation: fadeIn .3s ease-out .3s;
         animation-fill-mode: backwards;
     }
@@ -145,4 +141,17 @@
     align-items: center;
     flex: 1;
     padding: 0rem 3rem;
+
+    @media only screen and (max-width: $bp-medium) {
+        display: none;
+        padding: 2rem 0;
+        transform: translateY(-.8rem); 
+        box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+        background-color: rgba($color-grey-dark-3, 1);
+    }
+}
+
+#toggle:checked + .navbar-list-flex {
+    display: flex;
+    flex-direction: column;
 }
