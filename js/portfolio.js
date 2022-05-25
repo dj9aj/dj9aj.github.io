@@ -116,6 +116,6 @@ window.addEventListener('scroll', event => {
 
 
 // Listen for click or touch events
-['click','ontouchstart'].forEach( evt => 
+['click','ontouchstart'].forEach(evt => 
     window.addEventListener(evt, hideNavOnClick, false)
 );
