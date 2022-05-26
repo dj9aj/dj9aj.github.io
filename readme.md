@@ -1,6 +1,6 @@
 # My Portfolio Site
 
-jack-doyle.com
+[jack-doyle.com](https://www.jack-doyle.com)
 
 I have created a portfolio to showcase my skills and projects. To achieve this, I implemented the following - 
 
